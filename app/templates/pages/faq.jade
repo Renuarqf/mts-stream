@@ -1,0 +1,338 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	sectio.section-head(style="background-image:url(assets/images/content/head-bg-1.jpg)")
+		.container
+			.section-head__title-wrap
+				.section-head__title FAQ
+	section.section-default
+		.container.container-sm
+			.faq-tabs__block
+				.faq-tabs__head
+					ul.faq-tabs__list
+						li
+							a(href="#").faq-tabs__link.active
+								span Тест системы
+						li
+							a(href="#").faq-tabs__link
+								span Участие в Лигах
+						li
+							a(href="#").faq-tabs__link
+								span Как стримить
+						li
+							a(href="#").faq-tabs__link
+								span Общие вопросы
+				.faq-tabs__body
+					.faq-tab.visible
+						.btn__wrap.text-center.btn__wrap-main
+							button.btn.btn-default.btn-lg Начать тест
+						.btn__wrap.text-center.btn__wrap-main
+							button.btn.btn-default.btn-lg.disabled Тестируем — анализаруем
+						.test-confirm
+							.test-confirm__title Система работает нормально!
+							.test-confirm__message
+								| Ты можешь
+								| #{' '}
+								a(href="#") пройти тест
+								| #{' '}
+								| еще раз или
+								| #{' '}
+								a(href="#") написать
+								| #{' '}
+								| в техподдержку
+						.test-confirm.error
+							.test-confirm__title Что то у тебя не работает
+							.test-confirm__message
+								| Ты можешь
+								| #{' '}
+								a(href="#") пройти тест
+								| #{' '}
+								| еще раз или
+								| #{' '}
+								a(href="#") написать
+								| #{' '}
+								| в техподдержку
+						.test-parametres
+							.row
+								.col-4
+									.test-parametre.done
+										.test-parametre__value 89.175.239.163
+										.test-parametre__name Твой IP-адрес
+								.col-2
+									.test-parametre
+										.test-parametre__value 00
+										.test-parametre__name Пинг (мс)
+								.col-2
+									.test-parametre
+										.test-parametre__value 00.00
+										.test-parametre__name Скачивание (Мб/сек)
+								.col-2
+									.test-parametre.error
+										.test-parametre__value 00.00
+										.test-parametre__name Загрузка (Мб/сек)
+								.col-2
+									.test-parametre
+										.test-parametre__value 00
+										.test-parametre__name Задержка (мс)
+						//test-parametres
+						.test-bar__wrap
+							.test-bar
+								.bar(style="width:0;")
+							.test-bar__comment Этот тест быстрее чем перезарядка в «Таркове»
+						.test-result__block
+							.row
+								.col-4
+									.test-result
+										.test-result__name Браузер
+										.test-result__value
+											.test-result__empty Неизветсно
+								.col-4
+									.test-result
+										.test-result__name Плеер
+										.test-result__value
+											.test-result__empty Неизветсно
+								.col-4
+									.test-result.done
+										.test-result__name Доступное качество трансляции
+										.test-result__value
+											.test-result__error Ошибка
+						.test-bar__wrap
+							.test-bar.in-progress
+								.bar(style="width:33%;")
+							.test-bar__comment Вычисляем тебя по IP
+						.test-result__block
+							.row
+								.col-4
+									.test-result.done
+										.test-result__name Браузер
+										.test-result__value
+											.test-result__value-img
+												img( src="assets/images/svg-content/browsers/icon_ie.svg" alt="")
+											.test-result__value-name Internet Explorer 11
+								.col-4
+									.test-result.in-progress
+										.test-result__name Плеер
+										.test-result__value
+											.test-result__empty Определяем
+								.col-4
+									.test-result
+										.test-result__name Доступное качество трансляции
+										.test-result__value
+											.test-result__empty Неизветсно
+						//test-result__block
+						.test-result__block
+							.row
+								.col-4
+									.test-result.done
+										.test-result__name Браузер
+										.test-result__value
+											.test-result__value-img
+												img( src="assets/images/svg-content/browsers/icon_ie.svg" alt="")
+											.test-result__value-name Internet Explorer 11
+								.col-4
+									.test-result.done
+										.test-result__name Плеер
+										.test-result__value
+											.test-result__value-img
+												img( src="assets/images/content/html5icon.png" alt="")
+											.test-result__value-name HTML 5
+								.col-4
+									.test-result.done
+										.test-result__name Доступное качество трансляции
+										.test-result__value
+											.test-result__value-elem SD
+											.test-result__value-elem HD
+											.test-result__value-elem FullHD
+						//test-result__block
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Для оптимального просмотра трансляции необходимо…
+							.faq-collaps__body
+								.text-block
+									ol
+										li Поддержка HTML5 видео (в современных браузерах). Для устаревших браузеров, не поддерживающих HTML5, необходим компонент для веб-браузера — Adobe Flash Player последней версии
+										li Доступность серверов COMDI
+										li Открытые порты 80 и 443
+										li Желательна последняя версия браузера:
+											br
+											| —  Internet Explorer ≥ 9
+											br
+											| —  Chrome ≥ 35
+											br
+											| —  Firefox ≥ 29
+											br
+											| —  Opera ≥ 21
+											br
+											| —  Safari ≥ 7
+										li Стабильное Интернет соединение с входящей скоростью не менее 850 кБит/сек
+										li В плеере реализована возможность выбора качества онлайн-трансляции:
+											br
+											| —  SD (низкое качество) — для пользователей с входящей скоростью Интернет не ниже 850 кБит/сек (открывается по умолчанию)
+											br
+											| —  HD (высокое качество) — для пользователей с входящей скоростью Интернет не ниже 2 мБит/сек
+											| 	(для переключения в этот формат необходимо нажать соответствующую кнопку (SD/HD/FullHD) в всплывающем меню плеера)
+											br
+											| —  FullHD (высокое качество) — для пользователей с входящей скоростью Интернет не ниже 3 мБит/сек
+											| 	(для переключения в этот формат необходимо нажать соответствующую кнопку (SD/HD/FullHD) в всплывающем меню плеера)
+									ul
+										li lorem
+										li lorem
+										li lorem
+									p Трансляция доступна для просмотра на мобильных устройствах под управлением iOS 8 и выше, а также на мобильных устройствах под управлением Android 4.4 и выше.
+
+
+					//faq-tab
+
+					.faq-tab.visible
+						.faq-steps__block
+							.faq-steps__title Как  быстро начать стрим?
+							.faq-steps__text
+								.text-block
+									p Скачай и установи программу для захвата видео:
+										| #{' '}
+										a(href="#" target="_blank") OBS
+										| #{' '}
+										a(href="#" target="_blank") StreamlabsOBS
+										| #{' '}
+										a(href="#" target="_blank") Xsplit
+									p OBS и StreamlabsOBS –
+										| #{' '}
+										strong бесплатные.
+						.faq-steps__block
+							.faq-steps__title 6 шагов настройки
+							.faq-subtabs__block
+								.faq-subtabs__head
+									.faq-subtabs__head
+										ul.faq-subtabs__list
+											li
+												a(href="#").faq-subtabs__link.active
+													img( src="assets/images/content/steam-app/obs-logo.png" alt="")
+											li
+												a(href="#").faq-subtabs__link
+													img( src="assets/images/content/steam-app/streamlabs-logo.png" alt="")
+											li
+												a(href="#").faq-subtabs__link
+													img( src="assets/images/content/steam-app/xsplit-logo.png" alt="")
+								.faq-subtabs__body
+									.faq-subtab
+										.faq-step__list
+											.faq-step
+												.faq-step__name 1. Выбери настройки
+												a(href="assets/images/content/steps-img/faq-steps-obs-01.jpg").faq-step__preview
+													img( src="assets/images/content/steps-img/faq-steps-obs-01.jpg" alt="")
+											.faq-step
+												.faq-step__name 2. Открой вкладку «Stream»
+												a(href="assets/images/content/steps-img/faq-steps-obs-02.jpg").faq-step__preview
+													img( src="assets/images/content/steps-img/faq-steps-obs-02.jpg" alt="")
+											.faq-step
+												.faq-step__name 3. Выбери тип сервера (Custom Streaming Server)
+												a(href="assets/images/content/steps-img/faq-steps-obs-03.jpg").faq-step__preview
+													img( src="assets/images/content/steps-img/faq-steps-obs-03.jpg" alt="")
+											.faq-step
+												.faq-step__name 4. Возьми URL и ключ Стрима в настройках канала
+												a(href="assets/images/content/steps-img/faq-steps-obs-04.jpg").faq-step__preview
+													img( src="assets/images/content/steps-img/faq-steps-obs-04.jpg" alt="")
+											.faq-step
+												.faq-step__name 5. Вставь URL и Stream key
+												a(href="assets/images/content/steps-img/faq-steps-obs-05.jpg").faq-step__preview
+													img( src="assets/images/content/steps-img/faq-steps-obs-05.jpg" alt="")
+											.faq-step
+												.faq-step__name 6. Начинай стрим
+												a(href="assets/images/content/steps-img/faq-steps-obs-06.jpg").faq-step__preview
+													img( src="assets/images/content/steps-img/faq-steps-obs-06.jpg" alt="")
+
+					//faq-tab
+					.faq-tab.visible
+						.faq-tab__title Все о профиле
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Как создать свой канал
+							.faq-collaps__body
+								.text-block
+									p Создать канал можно двумя способами:
+									ol
+										li Через меню
+										li Через свой профиль
+									p Канал создается автоматически сразу после нажатия. В сплывающем окне можно сразу указать имя и описание канала.
+									p Всю остальную информацию о канале можно посмотреть и изменить в настройках канала.
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Мой опыт
+							.faq-collaps__body
+								.text-block
+									p Опыт, это внутренняя валюта и твоя награда за полезные действия на сайте. Его можно получить за выполнения заданий, подписку на канал, и даже просто за просмотр стримов на нашем сайте. С помощью опыта ты можешь похвалить понравившегося стримера.
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Задания
+							.faq-collaps__body
+								.text-block
+									p Специально для тебя мы сделали ежедневные задания, выполняя которые ты сможешь получать награды в виде
+										img( src="assets/images/svg-content/xp.svg" alt="").vertical-middle
+										| опыта или дополнительной персонализации (иконки, смайлы, фон и много другой годноты).
+
+									p Задания будут разные как для профиля так и для канала, и награды так же разные.
+									p С повышением уровня награды будут возрастать.
+
+									p
+										a(href="#") Проверь свои задания
+										| #{' '}
+										| , ведь они обновляются каждые 24 часа.
+
+						.faq-tab__title Все что связанно с валютой
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Донат и поддержка канала
+							.faq-collaps__body
+								.text-block
+									p Ты можешь поддержать любимого стримера с помощью встроенной системы донатов (реальными деньгами) или поделиться своим опытом нажав на кнопку «Похвалить».
+									img( src="assets/images/svg-content/amazing-1-norm.svg" alt="" style="width:12.7rem;").align-left
+									p Нажав на кнопку ты подаришь стримеру 100 опыта, которые спишутся с твоего профиля.
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Что такое Лига
+							.faq-collaps__body
+								.text-block
+									p На тестовый период мы внедряем Лигу стримеров, в которой ты можешь принять участие и получать призы в конце каждого периода. В зависимости от твоих достижений и любви зрителей, мы будем поощерять тебя опытом и материальными призами, которые позволять тебе стать лучше как стримеру и игроку.
+									p Подробнее ты можешь узнать на
+										| #{' '}
+										a(href="#") странице Лиги
+										| #{' '}
+										| с ее полным описанием.
+						.faq-collaps
+							a(href="#" data-control="toggle-collapse").faq-collaps__title Платная подписка
+							.faq-collaps__body
+								.text-block
+									p У нас её нет, наслаждайтесь!
+					//faq-tab
+				//faq-tabs__body
+		//container
+	//section-default
+	.chat-support
+		.chat-support__head
+			// can add attr or class disabled
+			button(data-control="chat-support-toggle").chat-support__toggle Онлайн чат техподдержки
+		.chat-support__body
+			.chat-support__inner
+				.chat-support__box
+					.chat-support__box-inner
+						.box-message__wrap
+							.box-message
+								.box-message__text
+									| Привет, как тебя зовут? Напиши какая у тебя проблема, и мы постараемся тебе помочь.
+								.box-message__date 12:34
+							.box-message.self-message
+								.box-message__text Привет, у меня проблема с вашим сервисом
+								.box-message__date 22:59
+							.box-message
+								.box-message__text А что конкретно?
+								.box-message__date 23:00
+
+				.chat-support__controls
+					form.chat-support__form
+						label.chat-support__label
+							input(type="text" value="" name="message" placeholder="Сообщение").chat-support__input
+						.chat-support__send-wrap
+						button.chat-support__send
+							svg.icon
+								use( xlink:href="#send-icon" )
+	//support-chat

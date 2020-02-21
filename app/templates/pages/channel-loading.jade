@@ -1,0 +1,112 @@
+extends ../layout/layout-loading
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	section.profile-head-skeleton
+		.container
+			.profile-data-skeleton
+				.profile-main-skeleton
+					.profile-main__avatar-skeleton
+					.profile-main__name-skeleton
+					.profile-main__status-skeleton
+					.profile-main__tags-skeleton
+						.profile-tag-skeleton
+						.profile-tag-skeleton
+					.profile-main__descrition-skeleton
+				.profile-rank-skeleton
+					.profile-rank__icon-skeleton
+						svg(xmlns="http://www.w3.org/2000/svg", width="84", height="96", viewbox="0 0 84 96")
+							path(d="M0 23.999V72l41.569 23.999L83.138 72V23.999L41.569 0z")
+
+					.profile-rank__name-skeleton
+			//profile-data-skeleton
+	section.section-default.section-default-grey
+		.container
+			.section-title-skeleton
+			.channel-list-skeleton
+				.row
+					- for (var i = 0; i < 8; i++) {
+						.col-sm-3.col-xl-2.col-6
+							.channel-skeleton
+								.channel__preview-skeleton
+								.channel__data-skeleton
+									.channel__avatar-skeleton
+									.channel__stream-name-skeleton
+									.channel__line-skeleton
+										.channel__name-skeleton
+										.channel__stats-skeleton
+											.stat-one-skeleton
+												.stat-one__icon-skeleton
+												.stat-one__value-skeleton
+											.stat-one-skeleton
+												.stat-one__icon-skeleton
+												.stat-one__value-skeleton
+									.channel__tags-skeleton
+										.channel__tag-skeleton
+										.channel__tag-skeleton
+							//channel-skeleton
+					- }
+
+			//stream-list
+			.link-more__wrap-skeleton
+				.link-more-skeleton
+					.link-more__icon-skeleton
+					.link-more__name-skeleton
+		//container
+	//.section-default.section-default-grey
+	section.section-default
+		.container
+			.section-title-skeleton
+			.subscribers-list-skeleton
+				.row
+					- for (var i = 0; i < 9; i++) {
+						.col-sm-4.col-xl-3.col-6
+							.subscriber-skeleton
+								.subscriber__inner-skeleton
+									.subscriber__avatar-skeleton
+									.subscriber__name-skeleton
+									.subscriber__lvl-skeleton
+										.subscriber__lvl-icon-skeleton
+										.subscriber__lvl-value-skeleton
+					- }
+			.link-more__wrap-skeleton
+				.link-more-skeleton
+					.link-more__icon-skeleton
+					.link-more__name-skeleton
+	section.section-default
+		.container
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title-skeleton
+						.box-white-skeleton
+							.rank-state-skeleton
+								.rank-state__img-current-skeleton
+									svg(xmlns="http://www.w3.org/2000/svg", width="84", height="96", viewbox="0 0 84 96")
+										path(d="M0 23.999V72l41.569 23.999L83.138 72V23.999L41.569 0z")
+								.rank-state__name-skeleton
+									.current-skeleton
+									.next-name-skeleton
+								.rank-state__progress-skeleton
+									.rank-state__img-next-skeleton
+										svg(xmlns="http://www.w3.org/2000/svg", width="84", height="96", viewbox="0 0 84 96")
+											path(d="M0 23.999V72l41.569 23.999L83.138 72V23.999L41.569 0z")
+									.rank-bar-skeleton
+								.rank-state__text-skeleton
+							//rank-state
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title-skeleton
+						.box-white-skeleton
+							.develop-block-skeleton
+								.develop-block__img-skeleton
+								.develop-block__message-skeleton
+									.develop-block__message-line-skeleton
+									.develop-block__message-line-skeleton
+							.btn__wrap-skeleton.text-right
+								.btn-default-skeleton

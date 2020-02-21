@@ -1,0 +1,186 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	section.section-default.section-default-grey-dark
+		.container
+			.search-result-head
+				.search-result-head__title
+					| Вот что мы нашли по запросу
+					| #{' '}
+					span.result Laegue
+					| :
+			.section-title__wrap
+				.section-title Каналы
+				.section-title__counter-wrap
+					.section-title__counter Всего 45 каналов
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.channel-simple
+							a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel-simple__img
+								.status-live
+							.channel-simple__head
+								a(href="#").channel-simple__name JustAStreamerChannel
+								.channel-simple__status в эфире
+							.channel-simple__tags
+								ul.tags-list
+									li
+										a(href="#").tag-link.tag-stream
+											.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+											.tag-link__name BobtheMan
+									li
+										a(href="#").tag-link.tag-type
+											.tag-link__name MOBA
+									li
+										a(href="#").tag-link
+											.tag-link__name 18+
+							.channel__stats
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 243 987
+								.stat-one
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#favorite-icon" )
+									.stat-one__value
+										| 423 987
+							.channel-simple__controls
+								a(href="#").favorite-control
+									.favorite-control__icon
+										svg.icon
+											use( xlink:href="#favorite-icon" )
+									.favorite-control__name В избранном
+						//channel-simple
+					//col-inner
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Показать еще 12
+		//container
+	//section-default
+	section.section-default
+		.container
+			.section-title__wrap
+				.section-title Профили
+				.section-title__counter-wrap
+					.section-title__counter Всего 13 профилей
+			.subscribers-list
+				.row
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+			//subscribers-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Показать еще 12
+		//container
+	//section-default
+	section.section-default.section-default-grey.section-default-max-height
+		.container
+			.empty-content
+				.empty-content__inner
+					.empty-content__img
+						img( src="assets/images/svg-content/empty-records.svg" alt="")
+					.empty-content__title
+						| Мы не смогли ничего найти по твоему запросу

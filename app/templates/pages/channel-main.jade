@@ -1,0 +1,243 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+	- var chatStatus = 'true'
+	- var separatorStatus = 'true'
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'main'
+
+	.section-main
+		.video-block__wrap
+			.video-block
+				include ../components/player
+		.container
+			.channel__main
+				.channel.channel-lg
+					a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel__avatar
+						.record-status-icon
+					div.channel__stream-name Fortnite: рвемся в бой ребятушки...
+					.channel__line
+						a(href="#").channel__name Название канала
+						.channel__stats
+							.stat-one.stat-one-rec
+								.stat-one__icon
+									svg.icon
+										use( xlink:href="#viewers-live" )
+								.stat-one__value
+									| 423 987
+							.stat-one
+								.stat-one__icon
+									svg.icon
+										use( xlink:href="#favorite-icon" )
+								.stat-one__value
+									| 234 963
+					.channel__tags
+						ul.tags-list
+							li
+								a(href="#").tag-link.tag-stream
+									.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+									.tag-link__name BobtheMan
+							li
+								a(href="#").tag-link
+									.tag-link__name Без мата
+				//channel
+				.channel__main-controls
+					button.btn.btn-purple.btn-compressed
+						span.btn-name Подарить
+						span.btn-icon
+							svg.icon
+								use( xlink:href="#exp-icon" )
+						span.btn-subname 100
+					button.btn.btn-default.btn-compressed
+						span.btn-icon
+							svg.icon
+								use( xlink:href="#favorite-icon" )
+						span.btn-name Подписаться
+			//channel__main
+		//container
+	//section-main
+	section.section-default.section-default-grey
+		.container
+			.section-title__wrap
+				.section-title Записи этого канала
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Популярные
+						li
+							a(href="#").tab-control Новые
+						li
+							a(href="#").tab-control Самые короткие
+			.channel-list
+				.row
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+			//stream-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Посмотреть больше
+		//container
+	//.section-default.section-default-grey
+	section.section-default
+		.container
+			.section-title__wrap
+				.section-title Подписчики канала
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Все подписчики (45 948)
+						li
+							a(href="#").tab-control Самые активные
+						li
+							a(href="#").tab-control Самые щедрые
+			.subscribers-list
+				.row
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+					.col-sm-4.col-xl-3.col-6
+						.col-inner
+							.subscriber
+								.subscriber__inner
+									.subscriber__avatar(style="background-image:url(assets/images/content/avatar-5.png)")
+									.subscriber__name Rachel Morgan
+									.subscriber__lvl
+										.subscriber__lvl-icon
+											img( src="assets/images/svg-content/lvl/lvl.svg" alt="")
+										.subscriber__lvl-value 414 lvl
+			//subscribers-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Посмотреть больше
+		//container
+	//.section-default
+	.notification-block
+		.notification
+			a(href="#" data-control="close-notification").notification__close
+				svg.icon
+					use( xlink:href="#close-icon" )
+			.notification__inner
+				.notification__img
+					img( src="assets/images/svg-content/notification-minus.svg" alt="")
+				.notification__message
+					| У тебя не хватает
+					| #{' '}
+					strong 100
+					| #{' '}
+					| опыта для доната каналу!
+		.notification
+			a(href="#" data-control="close-notification").notification__close
+				svg.icon
+					use( xlink:href="#close-icon" )
+			.notification__inner
+				.notification__img
+					img( src="assets/images/svg-content/notification-plus.svg" alt="")
+				.notification__message
+					| Спасибо за поддержку!
+					br
+					| 100 опыта начислено.
+	//notification-block

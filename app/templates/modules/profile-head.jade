@@ -1,0 +1,61 @@
+section.section-profile-head(style="background-image:url(assets/images/content/head-bg-1.jpg)")
+	.container
+		.profile-data
+			.profile-main
+				.profile-main__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+				.profile-main__name JustAStreamer_chanel
+				.profile-main__tags
+					ul.tags-list
+						li
+							a(href="#").tag-link.tag-game
+								.tag-link__img(style="background-image:url(assets/images/content/game-1.png)")
+								.tag-link__name LOL
+						li
+							a(href="#").tag-link.tag-stream
+								.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+								.tag-link__name BobtheMan
+						li
+							a(href="#").tag-link.tag-type
+								.tag-link__name MOBA
+						li
+							a(href="#").tag-link
+								.tag-link__name 18+
+				.profile-main__descrition
+					| Привет!
+					br
+					| Это мой канал где я буду стримить LOL по 24 часа.
+					br
+					|Постараюсь через день, но ничего не гарантирую.
+
+			.profile-rank
+				.profile-rank__icon
+					img( src="assets/images/svg-content/rank-4.svg" alt="")
+				.profile-rank__name Специалист
+		//profile-data
+		.profile-controls
+			.profile-menu__wrap
+				ul.profile-menu
+					li
+						a(href="#" class=(profMenu == 'main') ? 'active2' : '').profile-menu__link Главное
+					li
+						a(href="#").profile-menu__link Подписчики
+					li
+						a(href="#").profile-menu__link Записи канала
+					li
+						a(href="#" class=(profMenu == 'rank') ? 'active' : '').profile-menu__link Ранг и задания
+					li
+						a(href="#" class=(profMenu == 'settings') ? 'active' : '').profile-menu__link Настройки
+				//profile-menu
+			.profile-scoial__wrap
+				ul.social-list
+					li
+						a(href="#" target="_blank").social-link
+							img( src="assets/images/svg-content/social-yt.svg" alt="")
+					li
+						a(href="#" target="_blank").social-link
+							img( src="assets/images/svg-content/social-vk.svg" alt="")
+					li
+						a(href="#" target="_blank").social-link
+							img( src="assets/images/svg-content/social-fb.svg" alt="")
+			//profile-menu__wrap
+		//profile-controls

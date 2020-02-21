@@ -1,0 +1,64 @@
+.chat-block(id="chat")
+	a(href="#").chat-toggle
+		.chat-toggle__icon
+			svg.icon
+				use( xlink:href="#left-mini")
+	.chat-block__inner
+		.chat-block__head
+			ul.chat-block__tab
+				li
+					a(href="#").chat-tab-link.active Общий чат
+		.chat-block__body
+			.chat-messages__wrap
+				.chat-messages
+					.system-message
+						.system-message__text Привет, стрим идет 1 час 30 минут
+					.message.message-green
+						.message__avatar(style="background-image:url(assets/images/content/avatar-1.png)")
+						.message__member SmallGuy
+						.message__text Блин, а почему значок чиров не остается :c тупая корона я думал он остается даже если стоит недельное обновление
+							| Блин, а почему значок чиров не остается :c тупая корона я думал он остается даже если стоит недельное обновление
+							| Блин, а почему значок чиров не остается :c тупая корона я думал он остается даже если стоит недельное обновление
+							| Блин, а почему значок чиров не остается :c тупая корона я думал он остается даже если стоит недельное обновление
+							| Блин, а почему значок чиров не остается :c тупая корона я думал он остается даже если стоит недельное обновление
+							| Блин, а почему значок чиров не остается :c тупая корона я думал он остается даже если стоит недельное обновление
+					.system-message
+						.system-message__subs
+							.system-message__subs-name I_lovecats_and_dogs
+							.system-message__subs-icon
+								svg.icon
+									use( xlink:href="#favorite-icon" )
+							.system-message__subs-text Подписался и теперь с нами, пираты!
+					.message.message-red
+						.message__avatar(style="background-image:url(assets/images/content/avatar-1.png)")
+						.message__member Groove
+						.message__text Дай мне норм комп что бы я могла играть на компе, а так пока телефоном обхожусь
+					.message
+						.message__avatar
+						.message__member User 32
+						.message__text Я думал он остается
+					.message
+						.message__avatar
+						.message__member NoOneTak
+						.message__text War 4 makes no sense with the ending of this game. This should've been the last one
+
+					.message.message-purple
+						.message__avatar(style="background-image:url(assets/images/content/avatar-1.png)")
+						.message__member BillieBilly1111111
+						.message__text Нам его не понять) он наркотиками не делиться)
+
+		.chat-block__foot
+			.chat-input__block
+				.chat-input__addition
+					.addition-one
+						button(type="button").addition-btn
+							.addition-btn__icon
+								svg.icon
+									use( xlink:href="#smile-icon" )
+				.chat-input__message
+					.message-input(contenteditable="true" data-placeholder="Напишите сообщение")
+				.chat-input__control
+						button(type="button").chat-btn
+							.chat-btn__icon
+								svg.icon
+									use( xlink:href="#send-icon" )

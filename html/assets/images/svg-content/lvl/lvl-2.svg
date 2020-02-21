@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="105px" viewBox="0 0 83 105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>C4E06757-8C34-414D-914F-88ECDBAAD3B9</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-25.7068878%" y1="100%" x2="146.102443%" y2="-9.70219602%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-22.5526518%" y1="100%" x2="119.322229%" y2="-5.53509319%" id="linearGradient-2">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Все-лвл-Профиля" transform="translate(-284.000000, -204.000000)">
+            <g id="2" transform="translate(284.000000, 204.000000)">
+                <polygon id="Rectangle-12-Copy-21" fill="#FFFFFF" points="2 1 83 1 83 75.7558076 42.8995935 103 2 75.7558076"></polygon>
+                <polygon id="Rectangle-12-Copy" fill="url(#linearGradient-1)" points="4 4 79 4 79 74.3584072 41.869994 100 4 74.3584072"></polygon>
+                <path d="M1,1 L1,76.420447 L41.9039352,103.79305 L82,76.4263157 L82,1 L1,1 Z" id="Rectangle-12-Copy-2" stroke="url(#linearGradient-2)" stroke-width="2"></path>
+                <text id="lvl" font-family="PTSans-Bold, PT Sans" font-size="20" font-weight="bold" letter-spacing="1.142857" fill="#FFFFFF">
+                    <tspan x="25.6757145" y="77">LVL</tspan>
+                </text>
+                <text font-family="PTSans-Bold, PT Sans" font-size="48" font-weight="bold" letter-spacing="1.476923" fill="#FFFFFF">
+                    <tspan x="26.6535385" y="50">2</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

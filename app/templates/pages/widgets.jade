@@ -1,0 +1,93 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	section.section-widget(style="background-image:url(assets/images/widgets/widget-bg-1.jpg)")
+		.container.container-sm
+			.widget
+				.widget__img.widget__img-bottom-left(style="background-image:url(assets/images/widgets/npc-img-1.png)")
+				.widget__content
+					.widget__title Пройди быстрый опрос и получи 300 ХР
+					.btn__wrap.text-center
+						a(href="#").btn.btn-default.btn-lg Да, хочу 300 ХР
+
+	section.section-widget(style="background-image:url(assets/images/widgets/widget-bg-2.jpg)")
+		button.widget-close
+			svg.icon
+				use( xlink:href="#close-icon" )
+		.container.container-sm
+			form.widget
+				.widget__content
+					.widget__subtitle Оцени наш сервис по 5 балочке
+					.star-rating__wrap
+						.star-rating
+							- for (var i = 0; i < 5; i++) {
+								label.star-label
+									input(type="radio" name="star-rating" value= i+1)
+									.star-visual
+										.star-visual-shadow
+											img( src="assets/images/widgets/star-light.png" alt="")
+										.star-visual-img-grey
+											img( src="assets/images/widgets/star-grey.svg" alt="")
+										.star-visual-img
+											img( src="assets/images/widgets/star-color.svg" alt="")
+							- }
+					.btn__wrap.text-center
+						button(type="submit").btn.btn-default.btn-lg Оценить
+
+	section.section-widget(style="background-image:url(assets/images/widgets/widget-bg-2.jpg)")
+		button.widget-close
+			svg.icon
+				use( xlink:href="#close-icon" )
+		.container.container-sm
+			form.widget
+				.widget__content
+					.widget__text.widget__text-three Удобно ли пользоваться нашим календарем?
+					.like-rating__wrap
+						.like-rating
+							- for (var i = 0; i < 10; i++) {
+								label.like-label
+									input(type="radio" name="like-rating" value= i+1)
+									.like-visual
+										.like-visual-img-grey
+											img( src="assets/images/widgets/like-grey.svg" alt="")
+										.like-visual-img
+											img( src="assets/images/widgets/like-color.svg" alt="")
+										.like-visual-counter= i+1
+							- }
+							.like-rating__gradation
+								.gradation__min Вообще не удобно!
+								.gradation__max Огонь, постоянно пользуюсь!
+					.btn__wrap.text-center
+						button(type="submit").btn.btn-default.btn-lg Оценить
+
+
+	section.section-widget(style="background-image:url(assets/images/widgets/widget-bg-2.jpg)")
+		button.widget-close
+			svg.icon
+				use( xlink:href="#close-icon" )
+		.container.container-sm
+			form.widget
+				.widget__content
+					.widget__text Удобно ли пользоваться нашим календарем?
+					.widget__message
+						.widget__message-label
+							textarea(placeholder="Напиши все что думаешь - не стесняйся!").widget__message-input
+					.btn__wrap.text-center
+						button(type="submit").btn.btn-default.btn-lg Отправить
+
+	section.section-widget(style="background-image:url(assets/images/widgets/widget-bg-3.jpg)")
+		button.widget-close
+			svg.icon
+				use( xlink:href="#close-icon" )
+		.container.container-sm
+			form.widget
+				.widget__content
+					.widget__text Спасибо, вот тебе награда за выполнение!
+					.widget__final-image
+						img( src="assets/images/widgets/money.svg" alt="")

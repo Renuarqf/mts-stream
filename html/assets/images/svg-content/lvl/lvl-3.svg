@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="111px" viewBox="0 0 91 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>E3B2A555-6277-4E7A-BABC-F71E69371A92</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-25.7068878%" y1="100%" x2="146.102443%" y2="-9.70219602%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Все-лвл-Профиля" transform="translate(-280.000000, -330.000000)">
+            <g id="3" transform="translate(280.000000, 330.000000)">
+                <polygon id="Rectangle-12-Copy-21" fill="#FFFFFF" points="5 6 86 6 86 80.7558076 45.8995935 108 5 80.7558076"></polygon>
+                <polygon id="Rectangle-12-Copy-12" fill="url(#linearGradient-1)" points="8 9 83 9 83 79.3584072 45.869994 105 8 79.3584072"></polygon>
+                <path d="M1.41125029,0 L46.5970166,4.0737642 L91,0 L88.1088745,17.6410836 L91,81.9895562 L46.0245007,110.117845 L0,81.9895562 L3.45237753,18.291946 L1.41125029,0 Z M6.18323227,6.7997031 L85.3780197,6.7997031 L85.3780197,80.7198134 L46.0636177,107.069909 L6.18323227,80.7198134 L6.18323227,6.7997031 Z" id="Rectangle-12-Copy-3" fill="url(#linearGradient-1)"></path>
+                <text id="lvl-copy" font-family="PTSans-Bold, PT Sans" font-size="20" font-weight="bold" letter-spacing="1.142857" fill="#FFFFFF">
+                    <tspan x="29.6757145" y="82">LVL</tspan>
+                </text>
+                <text font-family="PTSans-Bold, PT Sans" font-size="48" font-weight="bold" letter-spacing="1.476923" fill="#FFFFFF">
+                    <tspan x="30.6535385" y="55">3</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

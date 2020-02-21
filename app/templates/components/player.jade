@@ -1,0 +1,208 @@
+.player
+	.player__info
+		.container
+			.player__info-block
+				.player__info-stream-name Fortnite: рвемся в бой ребятушки...
+				.player__info-line
+					a(href="#").player__info-name Название канала
+					.channel__stats
+						.stat-one.stat-one-rec
+							.stat-one__icon
+								svg.icon
+									use( xlink:href="#viewers-live" )
+							.stat-one__value
+								| 423 987
+						.stat-one
+							.stat-one__icon
+								svg.icon
+									use( xlink:href="#favorite-icon" )
+							.stat-one__value
+								| 234 963
+			.player__info-status
+				.player-status.live
+					.player-status__icon
+						.ps-icon
+					.player-status__name В прямом эфире
+				.player-status
+					.player-status__icon
+						.ps-icon
+					.player-status__name Оффлайн
+				.player-status
+					.player-status__icon
+						svg.icon
+							use( xlink:href="#record-icon" )
+					.player-status__name Запись
+	.player__video(style="background-image:url(assets/images/content/stream-2.jpg)")
+	.player__controls
+		.player-bar
+			.bar(style="width:40%;")
+		.container
+			.controls__wrap
+				.controls__left
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip.left-pos
+								span воспроизвести
+							button.btn-controls
+								svg.icon
+									use( xlink:href="#plr_play" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span пауза
+							button.btn-controls
+								svg.icon
+									use( xlink:href="#plr_pause" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span настройка звука
+							button.btn-controls
+								svg.icon
+									use( xlink:href="#plr_sound" )
+								.volume-preview.vol-max
+									.vp-line.vp-line-1
+									.vp-line.vp-line-2
+							.sound-bar
+								.bar(style="width:75%;")
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span настройка звука
+							button.btn-controls
+								svg.icon
+									use( xlink:href="#plr_sound" )
+								.volume-preview.vol-mute
+									.vp-line.vp-line-1
+									.vp-line.vp-line-2
+							.sound-bar
+								.bar(style="width:0;")
+				.controls__state
+					.player__info-status
+						.player-status.live
+							.player-status__icon
+								.ps-icon
+							.player-status__name в эфире
+						.player-status
+							.player-status__icon
+								.ps-icon
+							.player-status__name Оффлайн
+						.player-status
+							.player-status__icon
+								svg.icon
+									use( xlink:href="#record-icon" )
+							.player-status__name Запись
+					.player-time
+						.player-time__current 02:35:42
+						.player-time__max / 03:00:00
+				.controls__right
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span посмотреть позже
+							button.btn-controls
+								svg.icon
+									use( xlink:href="#plr_later" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span режим театра
+							button.btn-controls(data-control="player-theatre")
+								svg.icon
+									use( xlink:href="#plr_theatre-mode-close" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span покинуть режим театра
+							button.btn-controls(data-control="player-theatre")
+								svg.icon
+									use( xlink:href="#plr_theatre-mode-open" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span во весь экран
+							button.btn-controls(data-control="player-fullscreen")
+								svg.icon
+									use( xlink:href="#plr_full-screen-close" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip
+								span обычный режим
+							button.btn-controls(data-control="player-fullscreen")
+								svg.icon
+									use( xlink:href="#plr_full-screen-open" )
+					.btn-control__single
+						.btn-control__one
+							.btn-control__tip.right-pos
+								span настройки
+							button.btn-controls(data-control="player-control")
+								svg.icon
+									use( xlink:href="#plr_settings" )
+						.btn-control__config.right-pos
+							.btn-control__block.btn-control__block-lg.has-arrow.visible(data-content="1")
+								.config-line
+									button.config-btn(data-control="show-subcontrol" data-link="2")
+										.config-btn__name Качество
+										.config-btn__value 720
+											.next-arrow
+								.config-line
+									button.config-btn(data-control="show-subcontrol" data-link="3")
+										.config-btn__name Скорость
+										.config-btn__value Обычная
+											.next-arrow
+								.config-line
+									button.config-btn(data-control="change-switcher")
+										.config-btn__name Только звук
+										.config-btn__value
+											.switcher
+												.switcher-icon
+								.config-line
+									button.config-btn.enabled
+										.config-btn__name В отдельном окне
+							.btn-control__block(data-content="2")
+								.config-line
+									button.config-btn(data-control="show-subcontrol" data-link="1")
+										.config-btn__name
+											.prev-arrow
+											| Назад
+								.config-line
+									button.config-btn
+										.config-btn__name 1080
+								.config-line
+									button.config-btn
+										.config-btn__name 720
+								.config-line
+									button.config-btn.enabled
+										.config-btn__name 480
+								.config-line
+									button.config-btn
+										.config-btn__name 320
+								.config-line
+									button.config-btn
+										.config-btn__name 240
+								.config-line
+									button.config-btn
+										.config-btn__name Автоматически
+							.btn-control__block(data-content="3")
+								.config-line
+									button.config-btn(data-control="show-subcontrol" data-link="1")
+										.config-btn__name
+											.prev-arrow
+											| Назад
+								.config-line
+									button.config-btn
+										.config-btn__name Флеш
+								.config-line
+									button.config-btn
+										.config-btn__name Спидран
+								.config-line
+									button.config-btn.enabled
+										.config-btn__name Обычная
+								.config-line
+									button.config-btn
+										.config-btn__name Тормоз
+								.config-line
+									button.config-btn
+										.config-btn__name Слоупок
+				//controls__right
+//player

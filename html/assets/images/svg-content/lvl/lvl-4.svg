@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="111px" viewBox="0 0 141 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>149ABCD4-5438-4CBF-AB2E-915B1095258F</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-25.7068878%" y1="100%" x2="146.102443%" y2="-9.70219602%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Все-лвл-Профиля" transform="translate(-255.000000, -474.000000)">
+            <g id="4" transform="translate(255.000000, 474.000000)">
+                <g id="Group-5">
+                    <polygon id="Rectangle-12-Copy-7" fill="#D0D0D0" opacity="0.596595982" transform="translate(15.103585, 27.500000) rotate(90.000000) translate(-15.103585, -27.500000) " points="7.60358513 12.3964149 22.6035851 12.3964149 22.6035851 31.3538162 7.60358513 42.6035851"></polygon>
+                    <polygon id="Rectangle-12-Copy-9" fill="#D0D0D0" opacity="0.596595982" transform="translate(125.923840, 27.500000) scale(-1, 1) rotate(90.000000) translate(-125.923840, -27.500000) " points="118.42384 12.5761597 133.42384 12.5761597 133.42384 31.1740714 118.42384 42.4238403"></polygon>
+                    <polygon id="Rectangle-12-Copy-17" fill="#D0D0D0" opacity="0.596595982" transform="translate(20.974696, 44.500000) rotate(90.000000) translate(-20.974696, -44.500000) " points="13.4746956 35.5253044 28.4746956 35.5253044 28.4746956 42.2249267 13.4746956 53.4746956"></polygon>
+                    <polygon id="Rectangle-12-Copy-16" fill="#D0D0D0" opacity="0.596595982" transform="translate(120.792658, 44.500000) scale(-1, 1) rotate(90.000000) translate(-120.792658, -44.500000) " points="113.292658 35.7073417 128.292658 35.7073417 128.292658 42.0428894 113.292658 53.2926583"></polygon>
+                    <polygon id="Rectangle-12-Copy-21" fill="#FFFFFF" points="30 6 111 6 111 80.7558076 70.8995935 108 30 80.7558076"></polygon>
+                    <polygon id="Rectangle-12-Copy-14" fill="url(#linearGradient-1)" points="33 9 108 9 108 79.3584072 70.869994 105 33 79.3584072"></polygon>
+                    <path d="M26.4112503,0 L71.5970166,4.0737642 L116,0 L113.108874,17.6410836 L116,81.9895562 L71.0245007,110.117845 L25,81.9895562 L28.4523775,18.291946 L26.4112503,0 Z M31.1832323,6.7997031 L110.37802,6.7997031 L110.37802,80.7198134 L71.0636177,107.069909 L31.1832323,80.7198134 L31.1832323,6.7997031 Z" id="Rectangle-12-Copy-15" fill="url(#linearGradient-1)"></path>
+                </g>
+                <text id="lvl-copy-2" font-family="PTSans-Bold, PT Sans" font-size="20" font-weight="bold" letter-spacing="1.142857" fill="#FFFFFF">
+                    <tspan x="54.6757145" y="82">LVL</tspan>
+                </text>
+                <text font-family="PTSans-Bold, PT Sans" font-size="48" font-weight="bold" letter-spacing="1.476923" fill="#FFFFFF">
+                    <tspan x="55.6535385" y="55">4</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

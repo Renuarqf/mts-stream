@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="84px" height="96px" viewBox="0 0 84 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="rank" transform="translate(-112.000000, -71.000000)">
+            <g id="Group-2" transform="translate(112.000000, 71.000000)">
+                <path d="M0.000500000002,24.399 L0.000500000002,72.4 L41.5685,96.399 L83.1375,72.4 L83.1375,24.399 L41.5685,0.4 L0.000500000002,24.399 Z M2.4895,70.961 L2.4895,25.836 L41.5685,3.274 L80.6485,25.836 L80.6485,70.961 L41.5685,93.524 L2.4895,70.961 Z" id="Fill-13" fill="#118ACA"></path>
+                <polygon id="Fill-14" fill="#118ACA" points="77.944 69.4001 41.569 90.4011 5.194 69.4001 5.194 27.3981 41.569 6.3971 77.944 27.3981"></polygon>
+                <polygon id="Fill-15" fill="#FEFEFE" points="41.569 57.8113 22.236 46.6493 22.236 55.2183 41.569 66.3803 60.902 55.2183 60.902 46.6493"></polygon>
+                <polygon id="Fill-16" fill="#FEFEFE" points="41.569 44.8113 22.236 33.6493 22.236 42.2183 41.569 53.3803 60.902 42.2183 60.902 33.6493"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,514 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'rank'
+	include ../modules/profile-head
+
+	section.section-default
+		.container
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title Ранг канала
+						.box-white
+							.rank-state
+								.rank-state__img-current
+									img( src="assets/images/svg-content/rank-4.svg" alt="")
+								.rank-state__name
+									.current Специалист
+									.next-name Младший Капрал
+								.rank-state__progress
+									.rank-state__img-next
+										img( src="assets/images/svg-content/rank-5.svg" alt="")
+									.rank-bar
+										.bar(style="width:43%;")
+								.rank-state__text Осталось еще чуть чуть и ты достигнешь максимального ранга
+							//rank-state
+						//box-white
+					//col-inner
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title.disabled Ранг в Лиге
+						.box-white.disabled
+							.develop-block
+								.develop-block__img
+									img( src="assets/images/svg-content/dev-img.svg" alt="")
+								.develop-block__message
+									| Мы работаем над этим блоком,
+									br
+									| но ниже есть задания! :)
+							.btn__wrap.text-right
+								button(type="button" disabled).btn.btn-default Учавствовать
+						//box-white
+					//col-inner
+		//container
+	//section-default
+	section.section-default
+		.container
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title__wrap
+							.section-title Мое расписание
+							.title-controls
+								button.btn.btn-default.btn-compressed(data-control="open-calendar")
+									span.btn-icon
+										svg.icon
+											use( xlink:href="#add-icon" )
+									span.btn-name Создать событие
+						.card-calendar
+							.left-part
+								.cc__head
+									.cc__title Сегодня
+								.cc__body
+									.cc__empty
+										.cc__img-empty
+											img( src="assets/images/svg-content/none-calendar.svg" alt="")
+										.cc__message-empty
+											p
+												strong В расписании пока нет событий!
+											p Добавляй сюда события чтобы твои подписчики смогли быстро и легко узнать о начале твоего стрима.
+							.right-part
+								.cc__head
+									button.cc__nav
+										svg.icon
+											use( xlink:href="#arrow-left" )
+									.cc__title 2 августа
+										span.day , Четверг
+									button.cc__nav
+										svg.icon
+											use( xlink:href="#arrow-right" )
+								.cc__body
+									.cc__empty
+										.cc__img-empty
+											img( src="assets/images/svg-content/none-calendar.svg" alt="")
+
+						//.card-calendar
+					//col-inner
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title__wrap
+							.section-title Мое расписание
+							.title-controls
+								button.btn.btn-default.btn-compressed(data-control="open-calendar")
+									span.btn-icon
+										svg.icon
+											use( xlink:href="#add-icon" )
+									span.btn-name Создать событие
+						.card-calendar
+							.left-part
+								.cc__head
+									.cc__title Сегодня
+								.cc__body
+									.task-mini-list
+										a(href="#").task-mini.done
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__name Ежедневный спринт-марафон по прохождению доты
+										a(href="#").task-mini
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__name Ежедневный спринт-марафон по прохождению доты
+										a(href="#").task-mini
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__name Ежедневный спринт-марафон по прохождению доты
+									//task-list
+							.right-part
+								.cc__head
+									button.cc__nav
+										svg.icon
+											use( xlink:href="#arrow-left" )
+									.cc__title 2 августа
+										span.day , Четверг
+									button.cc__nav
+										svg.icon
+											use( xlink:href="#arrow-right" )
+								.cc__body
+									.cc__card
+										button.close-card
+											svg.icon
+												use( xlink:href="#close-icon" )
+										.cc__card-preview
+											.cc__card-preview__img(style="background-image:url(assets/images/content/head-bg-1.jpg)")
+											.cc__card-preview__state Стрим скоро начнется
+										.cc__card-time 16:00 — 19:00
+										.cc__card-name Ежедневный спринт-марафон по прохождению ДОТЫ 2 и другие игры Lorem ipsum
+										a(href="#").cc__card-channel
+											.cc__card-channel__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+											.cc__card-channel__name Название канала 2
+										.cc__card-tags
+											ul.tags-list
+												li
+													a(href="#").tag-link.tag-game
+														.tag-link__img(style="background-image:url(assets/images/content/game-1.png)")
+														.tag-link__name LOL
+												li
+													a(href="#").tag-link.tag-type
+														.tag-link__name MOBA
+												li
+													a(href="#").tag-link
+														.tag-link__name 18+
+										.cc__card-controls
+											button.card-control(data-control="remove-task")
+												.card-control__icon
+													svg.icon
+														use( xlink:href="#delete-icon" )
+												.card-control__name Удалить
+											button.card-control(data-control="open-calendar")
+												.card-control__icon
+													svg.icon
+														use( xlink:href="#edit-icon" )
+												.card-control__name Редактировать
+
+							.cc-over
+								.cc-over__inner
+									.cc-over__message
+										.cc-over__text Точно-точно удалить?
+										.cc-over__controls
+											button(data-control="cancel-remove-task").btn.btn-cancel
+												span.btn-name Отмена
+											button.btn.btn-return
+												span.btn-name Удалить
+						//.card-calendar
+					//col-inner
+		//container
+	//section-default
+
+	section.section-default
+		.container
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title__wrap
+							.section-title Мое расписание
+						.card-calendar
+							.left-part
+								.cc__head
+									.cc__title Сегодня
+								.cc__body
+									.task-mini-list
+										a(href="#").task-mini.done.state-red
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-azure
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-purple
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-red
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-orange
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-blue
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-green
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+										a(href="#").task-mini.state-green
+											.task-mini__state
+											.task-mini__inner
+												.task-mini__time 08:00 - 11:00
+												.task-mini__channel
+													.task-mini__channel-avatar(style="background-image:url(assets/images/content/avatar-4.jpg)")
+													.task-mini__channel-name Название канала 5
+									//task-list
+							.right-part
+								.cc__head
+									button.cc__nav
+										svg.icon
+											use( xlink:href="#arrow-left" )
+									.cc__title 2 августа
+										span.day , Четверг
+									button.cc__nav
+										svg.icon
+											use( xlink:href="#arrow-right" )
+								.cc__body
+									.cc__card
+										button.close-card
+											svg.icon
+												use( xlink:href="#close-icon" )
+										.cc__card-preview
+											.cc__card-preview__img(style="background-image:url(assets/images/content/head-bg-1.jpg)")
+											.cc__card-preview__state Стрим в разгаре
+										.cc__card-time 16:00 — 19:00
+										.cc__card-name Ежедневный спринт-марафон
+										a(href="#").cc__card-channel
+											.cc__card-channel__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+											.cc__card-channel__name Название канала 2
+										.cc__card-tags
+											ul.tags-list
+												li
+													a(href="#").tag-link.tag-stream
+														.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+														.tag-link__name BobtheMan
+										.cc__card-controls
+											button.card-control(data-control="remove-task")
+												.card-control__icon
+													svg.icon
+														use( xlink:href="#add-icon" )
+												.card-control__name Добавить в календарь
+
+							.cc-over
+								.cc-over__inner
+									.cc-over__message
+										button.cc-over__close(data-control="cancel-remove-task")
+											svg.icon
+												use( xlink:href="#close-icon" )
+										.cc-over__text Добавить событие в календарь?
+										.cc-over__controls
+											button.btn.btn-empty
+												span.btn-name Добавить все события
+											button.btn.btn-default
+												span.btn-name Добавить одно
+						//.card-calendar
+					//col-inner
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title Задания
+						.card-white
+							- for (var i = 0; i < 3; i++) {
+							.task-one
+								.task-one__img
+									img( src="assets/images/svg-content/task-icon/task-icon-9.svg" alt="")
+								.task-one__desc
+									.task-one__title Лидер недели
+									.task-one__name Победить недельного топа
+								.task-one__xp
+									.task-one__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-one__xp-value 100
+							- }
+							- for (var i = 0; i < 2; i++) {
+							.task-one.done
+								.task-one__img
+									img( src="assets/images/svg-content/task-icon/task-icon-9.svg" alt="")
+								.task-one__desc
+									.task-one__title Лидер недели
+									.task-one__name Победить недельного топа
+								.task-one__xp
+									.task-one__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-one__xp-value 100
+							- }
+						//box-white
+					//col-inner
+		//container
+	//section-default
+
+	section.section-default
+		.container
+			.section-title__wrap
+				.section-title Задания
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control Дневные
+						li
+							a(href="#").tab-control.active Недельные
+						li
+							a(href="#").tab-control Выполненные
+			.tab-block
+				.row
+					.col-sm-6.col-6
+						.col-inner
+							.task-single
+								.task-single__img
+									img( src="assets/images/svg-content/task-icon/task-icon-1.svg" alt="")
+								.task-single__name Набрать 10 подписчиков
+								.task-single__xp
+									.task-single__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-single__xp-value 200
+					.col-sm-6.col-6
+						.col-inner
+							.task-single
+								.task-single__img
+									img( src="assets/images/svg-content/task-icon/task-icon-3.svg" alt="")
+								.task-single__name Набрать 10 подписчиков
+								.task-single__xp
+									.task-single__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-single__xp-value 200
+					.col-sm-6.col-6
+						.col-inner
+							.task-single.done
+								.task-single__img
+									img( src="assets/images/svg-content/task-icon/task-icon-4.svg" alt="")
+								.task-single__name Выполнено! Следующее задание через 23:49
+								.task-single__xp
+									.task-single__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-single__xp-value 200
+					.col-sm-6.col-6
+						.col-inner
+							.task-single
+								.task-single__img
+									img( src="assets/images/svg-content/task-icon/task-icon-5.svg" alt="")
+								.task-single__name Набрать 10 подписчиков
+								.task-single__xp
+									.task-single__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-single__xp-value 200
+					.col-sm-6.col-6
+						.col-inner
+							.task-single
+								.task-single__img
+									img( src="assets/images/svg-content/task-icon/task-icon-2.svg" alt="")
+								.task-single__name Установить мобильное приложение и зайти на сервис Установить мобильное приложение и зайти на сервис Установить мобильное приложение и зайти на сервис Установить мобильное приложение и зайти на сервис
+								.task-single__xp
+									.task-single__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-single__xp-value 200
+					.col-sm-6.col-6
+						.col-inner
+							.task-single.done
+								.task-single__img
+									img( src="assets/images/svg-content/task-icon/task-icon-6.svg" alt="")
+								.task-single__name Выполнено! Следующее задание через 23:49
+								.task-single__xp
+									.task-single__xp-icon
+										svg.icon
+											use( xlink:href="#exp-icon" )
+									.task-single__xp-value 200
+				.link-more__wrap
+					a(href="#").link-more
+						.link-more__icon
+							svg.icon
+								use( xlink:href="#arrow-down" )
+						.link-more__name Посмотреть все
+
+			//tab-block
+		//container
+	//section-default
+
+	section.section-default.section-default-grey
+		.container
+			.empty-content
+				.empty-content__inner
+					.empty-content__icon
+						img( src="assets/images/svg-content/attantion.svg" alt="")
+					.empty-content__title
+						strong JustAStreamer
+						| #{' '}
+						| пока не имеет своего канала
+	section.section-default
+		.container
+			.empty-content.empty-content-bg(style="background-image:url(assets/images/svg-content/empty-favorite.svg)")
+				.empty-content__inner
+					.empty-content__title
+						| Странно, но мы
+						| #{' '}
+						strong не нашли
+						| #{' '}
+						| избранных каналов :(
+
+	section.section-default.section-default-grey
+		.container
+			.empty-content
+				.empty-content__inner
+					.empty-content__img
+						img( src="assets/images/svg-content/empty-subs.svg" alt="")
+					.empty-content__title
+						| У твоего канала пока
+						| #{' '}
+						strong нет записей
+					.empty-content__text
+						| Создавай стрим и наполняй раздел крутыми записями своих игр!
+	section.section-default
+		.container
+			.empty-content
+				.empty-content__inner
+					.empty-content__img
+						img( src="assets/images/svg-content/empty-records.svg" alt="")
+					.empty-content__title
+						| У канала
+						| #{' '}
+						strong нет подписчиков
+					.empty-content__text
+						| Не отчаивайся, надо лишь
+						| #{' '}
+						u постримить
+						| #{' '}
+						| и завоевать их доверие!
+	section.section-default.section-default-grey
+		.container
+			.empty-content
+				.empty-content__inner
+					.empty-content__img
+						img( src="assets/images/svg-content/empty-records.svg" alt="")
+					.empty-content__title
+						| У этого канала пока
+						| #{' '}
+						strong нет записей
+	section.section-default
+		.container
+			.empty-content
+				.empty-content__inner
+					.empty-content__img
+						img( src="assets/images/svg-content/empty-subs.svg" alt="")
+					.empty-content__title
+						| У канала
+						| #{' '}
+						strong нет подписчиков
+					.empty-content__text
+						| Стань первым и получи
+						.inline-elem
+							.inline-elem__icon
+								svg.icon
+									use( xlink:href="#exp-icon" )
+							.inline-elem__value 50
+					.btn__wrap.text-center
+						button.btn.btn-default.btn-compressed
+							span.btn-icon
+								svg.icon
+									use( xlink:href="#favorite-icon" )
+							span.btn-name Подписаться

@@ -1,0 +1,72 @@
+
+.popup-layout
+	.popup-layout__inner
+		.shadow(data-control='close-popup')
+		.popup.popup-confirm
+			.popup-inner
+				a(href="#close" data-control='close-popup').popup-close
+					svg.icon
+						use( xlink:href="#close-icon" )
+				.popup-message
+					| Хочешь далить свой канал
+					| #{' '}
+					b.text-uppercase kolya-nikolay
+					| ?
+				.btn__wrap.text-center
+					button(data-control='close-popup').btn.btn-cancel Передумал
+					button(data-control='close-popup').btn.btn-return Удалить
+
+		.popup.popup-task
+			.popup-inner
+				.task-block
+					.task-block__head
+						.task-block__title Создать событие
+					.task-block__body
+						.task
+							.task__part
+								.task__date
+									.value-day 1 мая
+									.value-name Среда
+								.task-calendar
+									include ../components/calendar
+							.task__part
+								.task-form
+									.task-form__line
+										.task-form__line-title Время
+										.time-block
+											.time-segment
+												label.time-label
+													input(type="text" placeholder="00" value="").time-input
+												.time-dots
+												label.time-label
+													input(type="text" placeholder="00" value="").time-input
+												.task-form__line-info.error Начало события
+											.time-separator
+											.time-segment
+												label.time-label
+													input(type="text" placeholder="23" value="").time-input
+												.time-dots
+												label.time-label
+													input(type="text" placeholder="59" value="").time-input
+												.task-form__line-info Конец события
+									.task-form__line
+										.task-form__line-title Название
+										.task-label
+											textarea(placeholder="Напиши название стрима").task-input
+										.task-form__line-info Максимум 60 символов
+									.task-form__line
+										.task-form__line-title Теги
+										ul.tags-list
+											li
+												a(href="#").tag-link
+													.tag-link__name MOBA
+											li
+												a(href="#").tag-link
+													.tag-link__name 18+
+										.task-form__line-info Добавь теги в канале для быстрого поиска
+					.task-block__footer
+						.task-block__controls
+							button(data-control='close-popup').btn.btn-cancel
+								span.btn-name Отменить
+							button(data-control='close-popup').btn.btn-default
+								span.btn-name Сохранить

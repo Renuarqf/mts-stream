@@ -1,0 +1,313 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'rank'
+
+	section.section-rules-top(style="background-image:url(assets/images/content/gambit-league-header-primary.jpg)")
+		.container.container-sm
+			.rules-panel
+				.rules-panel__head
+					h1.rules-panel__headline Правила
+					.rules-panel__alpha
+						img( src="assets/images/widgets/alfa.svg" alt="")
+				.rules-panel__text
+					p Будь активным зрителем. Будь популярным стримером. Участвуй в рейтинге. Выигрывай отличные призы. Механика альфа-лиги дает шанс на победу всем!
+				.rules-panel__button
+					button.btn.btn-simple.btn-none-bg
+						span.btn-name Вернуться к рейтингам
+			
+	section.section-rules
+		.container.container-sm
+			.section-rules__about
+				.about-rules__head
+					.module-icon
+						img(src="assets/images/icons/cup-white.svg", alt="").module-icon__image.module-icon_cup
+					h2.section-rules__headline Что такое лига?
+				.about-rules__body
+					.row
+						.col-6
+							.about-rules__content.space-content
+								p Лига — это твой шанс проявить себя, выиграть ценные призы и конечно славу и почет!
+								p Механика лиги специально разработана так, чтобы уровнять шансы как матерых профи, так и новичков.
+								p Стримь на своем канале, или проявляй активность как зритель. Зарабатывай опыт. Делай это лучше других. Не расстраивайся если не получилось сразу. 
+								p Каждые 7 дней у тебя появляется новый шанс победить. Каждую неделю мы разыгрываем промежуточные призы. Каждые 4 недели подводим итоги этапа. В конце сезона выбираем лучших из лучших!
+						.col-6
+							.about-rules__content
+								ul
+									li
+										em Лига — это виртуальное соревнование.
+									li
+										em В Лиге участвуют все кто зарегистрирван на сайте wasd.tv
+									li
+										em В Лиге 2 рейтинга: зрителей и каналов.
+									li
+										em В Лиге ценится активность и настойчивость.
+									li
+										em Лига идет 12 недель и состоит из 3х этапов.
+									li
+										em Чем больше опыта зарабатываешь, тем выше ты в рейтинге
+									li
+										em 240 победителей лиги получат награды и призы.
+		
+			.section-rules__scheme
+				.league-scheme
+					.league-scheme__head
+						.league-scheme__inner
+							.module-icon
+								img(src="assets/images/icons/medal-white.svg", alt="").module-icon__image.module-icon_medal
+							h2.section-rules__headline Как устроена Лига
+					.league-scheme__body
+						.league-scheme__inner
+							.row
+								.col-6
+									.league-scheme__content.space-content
+										p
+											| Лига состоит из
+											|#{' '}
+											em 3х этапов
+											|, каждый этап разбит на
+											|#{' '}
+											em 4 семидневных отрезка
+											|. Чтобы победить в финале нужно попасть в топ 10 этапа.
+										p
+											| В течении всей недели тебе нужно проявлять активность и зарабатывать баллы. Из зрителей и стримеров формируется топ недели. По результатам недели,
+											|#{' '}
+											em лучшие 10 зрителей и 10 стримеров
+											|, попадают в топ этапа. Заработанные очки обнуляются.
+										
+										p
+											| Если на этой неделе у тебя не получилось победить — попробуй на следующей. На каждой новой неделе все стартуют
+											|#{' '}
+											em с баллансом 0 баллов
+											|, так что шансы высоки! Рейтинг обнуляется каждый понедельник в 4:00 по московскому времени.
+						.league-scheme__poster(style="background-image: url(assets/images/rules/league.png)")
+					.league-scheme__main
+						.league-scheme__inner
+							.module-time
+								.module-time__line
+									.module-time__label Срок:
+									.module-time__text 12 недель
+								.module-time__line
+									.module-time__label Период:
+									.module-time__text c 3 сентября - 25 ноября
+							.league-stages
+								.league-stages__item
+									.league-stages__cups
+										img(src="assets/images/rules/cups.svg", alt="")
+									.module-icon
+										img(src="assets/images/icons/top.svg", alt="").module-icon__image.module-icon_top
+									.league-stages__description
+										p I этап 
+										p 3 сентября - 30 сентября
+								.league-stages__item
+									.league-stages__cups
+										img(src="assets/images/rules/cups.svg", alt="")
+									.module-icon
+										img(src="assets/images/icons/top.svg", alt="").module-icon__image.module-icon_top
+									.league-stages__description
+										p II этап
+										p 1 октября - 28 октября
+								.league-stages__item
+									.league-stages__cups
+										img(src="assets/images/rules/cups.svg", alt="")
+									.module-icon
+										img(src="assets/images/icons/top.svg", alt="").module-icon__image.module-icon_top
+									.league-stages__description
+										p III этап
+										p 29 октября - 25 ноября
+							.league-final
+								.league-final__inner
+									.league-final__cup
+										img(src="assets/images/league/final-cup-active.svg", alt="")
+										.league-final__label Финал
+									time.league-final__date 26 – 30 ноября
+									.league-final__description
+										p По результатам 3х этапов формируется топ финалистов.  
+										p Победители получают награды и призы
+									.league-final__prizes
+										.module-icon
+											img(src="assets/images/icons/star-white.svg", alt="").module-icon__image.module-icon_star
+								.league-final__background(style="background-image: url(assets/images/content/final.png)")
+			
+			.section-rules__prizes
+				.prizes-head
+					.prizes-head__inner
+						h2.section-rules__headline Призы
+				.prizes-body
+					ul.nav.nav-prizes
+						li
+							a(href="#all" data-toggle="tab").btn.btn-control.active Все призы
+						li
+							a(href="#spectators" data-toggle="tab").btn.btn-control Для зрителей
+						li
+							a(href="#channels" data-toggle="tab").btn.btn-control Для каналов
+					.tab-content
+						.tab-pane.fade.show.active#all
+							.row.justify-content-center
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/pad.svg)")
+											.item-prize__amount x87
+										.item-prize__title Игровой коврик
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/keyboard.svg)")
+											.item-prize__amount x37
+										.item-prize__title Клавиатура
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/merch-gambit.svg)")
+											.item-prize__amount x32
+										.item-prize__title Мерч Gambit
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/webcam.svg)")
+											.item-prize__amount x18
+										.item-prize__title Full HD камера
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/audio.svg)")
+											.item-prize__amount x4
+										.item-prize__title Наушники
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/tickets.svg)")
+											.item-prize__amount x5
+										.item-prize__title Билеты на мероприятие
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/vip-tickets.svg)")
+											.item-prize__amount x4
+										.item-prize__title VIP билеты на мероприятие
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/mouse.svg)")
+											.item-prize__amount x1
+										.item-prize__title Игровая мышь
+						.tab-pane.fade#spectators
+							.row.justify-content-center
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/pad.svg)")
+											.item-prize__amount x42
+										.item-prize__title Игровой коврик
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/keyboard.svg)")
+											.item-prize__amount x10
+										.item-prize__title Клавиатура
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/merch-gambit.svg)")
+											.item-prize__amount x10
+										.item-prize__title Мерч Gambit
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/webcam.svg)")
+											.item-prize__amount x9
+										.item-prize__title Full HD камера
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/tickets.svg)")
+											.item-prize__amount x2
+										.item-prize__title Билеты на мероприятие
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/vip-tickets.svg)")
+											.item-prize__amount x3
+										.item-prize__title VIP билеты на мероприятие
+						.tab-pane.fade#channels
+							.row.justify-content-center
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/pad.svg)")
+											.item-prize__amount x45
+										.item-prize__title Игровой коврик
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/keyboard.svg)")
+											.item-prize__amount x27
+										.item-prize__title Клавиатура
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/merch-gambit.svg)")
+											.item-prize__amount x22
+										.item-prize__title Мерч Gambit
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/webcam.svg)")
+											.item-prize__amount x9
+										.item-prize__title Full HD камера
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/audio.svg)")
+											.item-prize__amount x4
+										.item-prize__title Наушники
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/tickets.svg)")
+											.item-prize__amount x3
+										.item-prize__title Билеты на мероприятие
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/vip-tickets.svg)")
+											.item-prize__amount x1
+										.item-prize__title VIP билеты на мероприятие
+								.col-3
+									.item-prize
+										.item-prize__image(style="background-image: url(assets/images/icons/prizes/mouse.svg)")
+											.item-prize__amount x1
+										.item-prize__title Игровая мышь
+			.section-rules__diagram
+				.diagram-head
+					.module-icon
+						img(src="assets/images/icons/joystick-white.svg", alt="").module-icon__image.module-icon_joystick
+					h2.section-rules__headline Кем будешь ты?
+				.diagram-body
+					.row
+						.col-6
+							.scheme-action
+								.scheme-action__inner
+									.scheme-action__preview(style="background-image: url(assets/images/content/preview-viewer.png)")
+									.scheme-action__info.scheme-action__info_right
+										strong.scheme-action__headline Зритель
+										.scheme-action__description
+											p Любит смотреть и выбирать лучших
+									.scheme-action__item.scheme-action__item_1
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-1.svg)")
+										.scheme-action__text Проявляй активность
+									.scheme-action__item.scheme-action__item_2
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-2.svg)")
+										.scheme-action__text Зарабатывай опыт
+									.scheme-action__item.scheme-action__item_3
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-3.svg)")
+										.scheme-action__text Поддерживай каналы
+									.scheme-action__item.scheme-action__item_4
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-4.svg)")
+										.scheme-action__text Выигрывай призы
+						.col-6
+							.scheme-action
+								.scheme-action__inner
+									.scheme-action__preview(style="background-image: url(assets/images/content/preview-streamer.png)")
+									.scheme-action__info.scheme-action__info_left
+										strong.scheme-action__headline Стример
+										.scheme-action__description
+											p Любит играть в игры и комментировать
+									.scheme-action__item.scheme-action__item_1
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-5.svg)")
+										.scheme-action__text Веди трансляции
+									.scheme-action__item.scheme-action__item_2
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-6.svg)")
+										.scheme-action__text Привлекай зрителей
+									.scheme-action__item.scheme-action__item_3
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-7.svg)")
+										.scheme-action__text Получай поддержку
+									.scheme-action__item.scheme-action__item_4
+										.scheme-action__icon(style="background-image: url(assets/images/icons/activity/icon-1.svg)")
+										.scheme-action__text Выигрывай призы

@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru").no-js
+	include ../blocks/head
+
+	- var bodyClass = '';
+
+	block vars
+
+	body(class='#{bodyClass}')
+
+		.layout
+			include ../blocks/svg
+
+			include ../blocks/header
+			.flex-wrap(class=(chatStatus == 'true') ? 'chat-visible' : '')
+				.layout-main__wrap
+					.layout-main
+						case chatStatus
+							when 'true'
+								.section-profile-head__wrap.hidden
+									include ../modules/profile-head
+						case separatorStatus
+							when 'true'
+								.line-separator
+						.layout-body
+							block content
+							case chatStatus
+								when 'true'
+									include ../modules/chat
+								default
+									div.non-chat
+						case footerVer
+							when 'full'
+								include ../blocks/footer-full
+							default
+								include ../blocks/footer
+
+		include ../modules/popup
+		include ../scripts/scripts

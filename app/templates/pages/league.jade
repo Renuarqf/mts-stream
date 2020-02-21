@@ -1,0 +1,410 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'rank'
+
+	section.section-league-top(style="background-image:url(assets/images/content/gambit-league-header.jpg)")
+		.container.container-sm
+			.league-top
+				.league-top__head
+					.league-top__title
+						span Лига
+						.league-top__title-alfa
+							img( src="assets/images/widgets/alfa.svg" alt="")
+					.league-top__subtitle При поддержке Gambit
+					.league-top__text
+						p Участвуй в альфа лиге и будешь пиздатым челом. Еще может и
+							| #{' '}
+							a(href="#") призы
+							| #{' '}
+							| получишь. А неучаствовать у тебя не получится, потому что у нас тут не демократия, нах!
+					.btn__wrap
+						button.btn.btn-simple.btn-none-bg
+							span.btn-name Правила лиги
+				//league-top__head
+				.league-schedule
+					- var cupVariant = 0
+					.league-bar__wrap
+						.league-bar__outer
+							.league-bar(style="width:30%")
+								.league-bar__gradient
+								.league-bar__angle
+									img( src="assets/images/league/bar-angle.svg" alt="")
+					.league-step__wrap
+						.row
+							.col-3
+								.league-step
+									.league-step__bg
+										.league-step__bg-hover
+											img( src="assets/images/league/step-bg-hover.svg" alt="")
+										.league-step__bg-active
+											img( src="assets/images/league/step-bg-active.svg" alt="")
+									.league-step__list
+										.row
+											- cupVariant = 1
+											.col-3
+												button(data-control="cup-changer").ls__one.active
+													include ../modules/cup
+													.ls__one-name Неделя 1
+											.col-3
+												button(data-control="cup-changer").ls__one
+													include ../modules/cup
+													.ls__one-name Неделя 2
+											.col-3
+												button(data-control="cup-changer").ls__one
+													include ../modules/cup
+													.ls__one-name Неделя 3
+											.col-3
+												button(data-control="cup-changer").ls__one
+													include ../modules/cup
+													.ls__one-name Неделя 4
+									.league-step__name-wrap
+										button(data-control="step-changer").league-step__btn
+											div.league-step__name
+												span Этап I
+							.col-3
+								.league-step
+									.league-step__bg
+										.league-step__bg-hover
+											img( src="assets/images/league/step-bg-hover.svg" alt="")
+										.league-step__bg-active
+											img( src="assets/images/league/step-bg-active.svg" alt="")
+									.league-step__list
+										.row
+											.col-3
+												button(data-control="cup-changer").ls__one
+													include ../modules/cup
+													.ls__one-name Неделя 5
+											- cupVariant = 2
+											.col-3
+												button(data-control="cup-changer").ls__one
+													include ../modules/cup
+													.ls__one-name Неделя 6
+											- cupVariant = 0
+											.col-3
+												button.ls__one(data-control="cup-changer" class=(cupVariant == 0) ? 'disabled' : '')
+													include ../modules/cup
+													.ls__one-name Неделя 7
+											.col-3
+												button.ls__one(data-control="cup-changer" class=(cupVariant == 0) ? 'disabled' : '')
+													include ../modules/cup
+													.ls__one-name Неделя 8
+									.league-step__name-wrap
+										button(data-control="step-changer").league-step__btn
+											div.league-step__name
+												span Этап II
+							.col-3
+								.league-step.none-separator
+									.league-step__bg
+										.league-step__bg-hover
+											img( src="assets/images/league/step-bg-hover.svg" alt="")
+										.league-step__bg-active
+											img( src="assets/images/league/step-bg-active.svg" alt="")
+									.league-step__list
+										.row
+											.col-3
+												button.ls__one(data-control="cup-changer" class=(cupVariant == 0) ? 'disabled' : '')
+													include ../modules/cup
+													.ls__one-name Неделя 9
+											.col-3
+												button.ls__one(data-control="cup-changer" class=(cupVariant == 0) ? 'disabled' : '')
+													include ../modules/cup
+													.ls__one-name Неделя 10
+											.col-3
+												button.ls__one(data-control="cup-changer" class=(cupVariant == 0) ? 'disabled' : '')
+													include ../modules/cup
+													.ls__one-name Неделя 11
+											.col-3
+												button.ls__one(data-control="cup-changer" class=(cupVariant == 0) ? 'disabled' : '')
+													include ../modules/cup
+													.ls__one-name Неделя 12
+									.league-step__name-wrap
+										button(data-control="step-changer").league-step__btn
+											div.league-step__name
+												span Этап III
+							.col-3
+								.league-step.final-step.active
+									.league-step__bg
+										.league-step__bg-hover
+											img( src="assets/images/league/step-bg-hover.svg" alt="")
+										.league-step__bg-active
+											img( src="assets/images/league/step-bg-active.svg" alt="")
+									.final-cup
+										.final-cup__def
+											img( src="assets/images/league/final-cup.svg" alt="")
+										.final-cup__hover
+											img( src="assets/images/league/final-cup-hover.svg" alt="")
+										.final-cup__active
+											img( src="assets/images/league/final-cup-active.svg" alt="")
+									.league-step__name-wrap
+										button(data-control="step-changer").league-step__btn
+											div.league-step__name
+												span Финал
+				//league-schedule
+			//league-top
+	//section-league-top
+	section.section-league
+		.container.container-sm
+			.section-league__controls
+				button.btn.btn-control.active Каналы
+				button.btn.btn-control Зрители
+			.league-block__wrap
+				.league-block__main
+					.league-block
+						.league-block__head
+							.league-block__dates
+								p
+									strong.mini-title Начало:
+									| #{' '}
+									| 3 сентября, 4:00
+								p
+									strong.mini-title Окончание:
+									| #{' '}
+									| 10 сентября, 3:59
+							.league-block__title Лучшие каналы. Неделя 1
+							.league-block__text
+								| Этот этап завершен. Победители определены, но это не значит что все потеряно: лига идет, шансы высоки! Начинай стримить, побеждай в следующем этапе
+						.league-block__body
+							.league__grid
+								.league__grid-head
+									.row
+										.col-1
+											.l-title Место
+										.col-2
+											.l-title Очки лиги
+										.col-4
+											//.l-title Название канала
+											.input-search.js_input-search
+												button.input-search__loupe
+													svg.icon.icon-search
+														use( xlink:href="#search-icon" )
+												input(type="text" placeholder="Название канала").input-search__control
+												button.input-search__cross
+													svg.icon.icon-close
+														use( xlink:href="#close-icon" )
+										.col-1
+											.l-title Ранг
+										.col-2
+											.l-title.text-right Лайки
+										.col-2
+											.l-title.text-right Опыт профиля
+								.league__grid-body
+									- for (var i = 0; i < 10; i++) {
+										.league-li(class=(i == 9) ? 'last' : '')
+											.league__line.league__line-channel(class=(i == 8) ? 'current current-stick' : '' )
+												.league__line-status
+												a(href="#" data-control="league-details").league__link
+													.row
+														.col-1
+															.l-place
+																.l-place__value= i + 1
+														.col-2
+															.l-score= (10 - i) * 317
+														.col-4
+															.l-name
+																if (i == 2)
+																	.l-name__icon
+																		img( src="assets/images/widgets/icon-play.svg" alt="")
+																.l-name__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+																.l-name__value Bulka_Cat 231
+														.col-1
+															.l-rank
+																img( src="assets/images/svg-content/lvl/lvl-1-purple.svg" alt="")
+														.col-2
+															.l-likes 8 736
+														.col-2
+															.l-exp 203
+													//row
+												.league-details
+													.row
+														.col-11.offset-1
+															include ../components/channel-league
+									- }
+									- for (var i = 0; i < 10; i++) {
+										.league-li
+											.league__line
+												.league__line-status
+												.league__link
+													.row
+														.col-1
+															.l-place
+																.l-place__value= i + 11
+														.col-2
+															.l-score
+														.col-4
+															.l-name
+																.l-name__avatar
+																.l-name__value
+														.col-1
+															.l-rank
+														.col-2
+															.l-likes
+														.col-2
+															.l-exp
+									- }
+						//league-block__body
+					.league-block
+						.league-block__head
+							.league-block__title Не прошли в финал
+						.league-block__body
+							.league__grid
+								.league__grid-head
+									.row
+										.col-1
+											.l-title Место
+										.col-2
+											.l-title Очки лиги
+										.col
+											.l-title Название канала
+										.col-1
+											.l-title Ранг
+										.col-2
+											.l-title.text-right Лайки
+										.col-2
+											.l-title.text-right Опыт профиля
+								.league__grid-body
+									- for (var i = 0; i < 10; i++) {
+									.league-li
+										.league__line.league__line-channel
+											.league__line-status
+											a(href="#" data-control="league-details").league__link
+												.row
+													.col-1
+														.l-place
+															.l-place__value= i + 11
+													.col-2
+														.l-score= 514
+													.col-4
+														.l-name
+															if (i == 2)
+																.l-name__icon
+																	img( src="assets/images/widgets/icon-play.svg" alt="")
+															.l-name__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+															.l-name__value Bulka_Cat 231
+													.col-1
+														.l-rank
+															img( src="assets/images/svg-content/lvl/lvl-1-purple.svg" alt="")
+													.col-2
+														.l-likes 8 736
+													.col-2
+														.l-exp 203
+												//row
+											.league-details
+												.row
+													.col-11.offset-1
+														include ../components/channel-league
+									- }
+						//league-block__body
+						.link-more__wrap
+							a(href="#").link-more
+								.link-more__icon
+									svg.icon
+										use( xlink:href="#arrow-down" )
+								.link-more__name Посмотреть больше
+
+					.league-block
+						.league-block__head
+							.league-block__dates
+								p
+									strong.mini-title Начало:
+									| #{' '}
+									| 3 сентября, 4:00
+								p
+									strong.mini-title Окончание:
+									| #{' '}
+									| 10 сентября, 3:59
+							.league-block__title Лучшие зрители. Этап I
+							.league-block__text
+								| Этот этап завершен. Победители определены, но это не значит что все потеряно: лига идет, шансы высоки! Начинай стримить, побеждай в следующем этапе
+						.league-block__body
+							.league__grid
+								.league__grid-head
+									.row
+										.col-1
+											.l-title Место
+										.col-2
+											.l-title Очки лиги
+										.col-4
+											.l-title Название канала
+										.col-1
+											.l-title Уровень
+										.col-2
+											.l-title.text-right Лайки
+										.col-2
+											.l-title.text-right Опыт профиля
+								.league__grid-body
+									- for (var i = 0; i < 10; i++) {
+									.league-li(class=(i == 9) ? 'last' : '')
+										.league__line(class=(i == 8) ? 'current' : '' )
+											a(href="#").league__link
+												.row
+													.col-1
+														.l-place
+															.l-place__value= i + 1
+													.col-2
+														.l-score= (10 - i) * 317
+													.col-4
+														.l-name
+															.l-name__avatar.l-name__avatar-circle(style="background-image:url(assets/images/content/avatar-3.png)")
+															.l-name__value Essie Wells
+													.col-1
+														.l-rank
+															img( src="assets/images/svg-content/rank-5-purple.svg" alt="")
+													.col-2
+														.l-likes 8 736
+													.col-2
+														.l-exp 203
+												//row
+									- }
+						//league-block__body
+				//league-block__main
+				.league-aside__wrap
+					.league-aside
+						.league-slider
+							.league-slider.js_league-slider
+								.league-slider__item
+									.league-slider__item-inner
+										.league-slider__title Супер приз
+										.league-slider__image.league-slider_shadow
+											img( src="assets/images/league/prise-img.png" alt="")
+										.league-slider__description
+											| Топ 5 каналов по в конце Лиги
+											| получат супер приз — игровая мышь
+											| RAZER DeathAdder Elite
+								.league-slider__item
+									.league-slider__item-inner
+										.league-slider__title Не сдавайся! СТРИМЬ!
+										.league-slider__text
+											| Пока есть еще незакрытые недели — есть шанс на победу.  Включайся в гонку, и выигрывай призы
+							.league-slider__footer
+								.league-slider__button
+									button.btn.btn-simple.btn-none-bg
+										span.btn-name Правила лиги
+								.league-slider__dots
+
+						.aside-stat
+							.aside-stat__title Лидеры за сегодня
+							.aside-stat__list
+								- for (var i = 0; i < 10; i++) {
+									a(href="#" class=(i == 4) ? 'current' : '').aside-stat__line
+										.row
+											.col-3
+												.l-place
+													.l-place__value= i + 1
+											.col-7
+												.l-name
+													.l-name__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+													.l-name__value Ethan Nguyen
+											.col-2
+												.l-rank
+													img( src="assets/images/svg-content/lvl/lvl-1-blue.svg" alt="")
+								- }
+					//league-aside__inner
+				//league-aside
+	//section-league

@@ -1,0 +1,22 @@
+
+case cupVariant
+	when 1
+		.ls__one-icon
+			.ls__one-icon-img.ls__one-icon__def
+				img( src="assets/images/league/cups/cup-previos.svg" alt="")
+			.ls__one-icon-img.ls__one-icon__hover
+				img( src="assets/images/league/cups/cup-previos-hover.svg" alt="")
+			.ls__one-icon-img.ls__one-icon__active
+				img( src="assets/images/league/cups/cup-previos-active.svg" alt="")
+	when 2
+		.ls__one-icon
+			.ls__one-icon-img.ls__one-icon__def
+				img( src="assets/images/league/cups/cup-current.svg" alt="")
+			.ls__one-icon-img.ls__one-icon__hover
+				img( src="assets/images/league/cups/cup-current-hover.svg" alt="")
+			.ls__one-icon-img.ls__one-icon__active
+				img( src="assets/images/league/cups/cup-current-active.svg" alt="")
+	default
+		.ls__one-icon
+			.ls__one-icon-img.ls__one-icon__def.blur
+				img( src="assets/images/league/cups/cup-blur.svg" alt="")

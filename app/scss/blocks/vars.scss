@@ -1,0 +1,122 @@
+// container size
+$min-width:960px;
+$max-width:1920px;
+
+$cp:30px;
+
+// colors
+$white-bg:#F5F5F5;
+$ligth-grey:#9b9b9b;
+$ligth-grey-two:#b3b3b3;
+$red:#D0021B;
+$white-four:#E5E5E5;
+$chat-green:#417505;
+$chat-red:#EF7B7B;
+$chat-purple:#868EE1;
+$dark-bg:#2A2A2A;
+$black-2:#222222;
+
+$search-match:#D3E9FB;
+
+
+$skeleton-main:#e7e7e7;
+$sk-footer-bg:#181818;
+$sk-footer-main:#29292a;
+$sk-head-main:#29292a;
+$sk-def:#d9d9d9;
+$vd-thumb-border:#898989;
+$vd-thumb-active:#4A90E2;
+
+$base-color: #000;
+$base-bg: $white-bg;
+
+$black:#000000;
+$dark-grey:#19191a;
+$dark-grey-two:#313233;
+$warm-grey:#a0a0a0;
+$white-two:#f0f0f0;
+$slate-grey:#68696d;
+$white:#d9d9d9;
+$bluish:#266bc5;
+$dark-sky-blue-two:#4ca6ef;
+$blue-with-a-hint-of-purple:#483cb8;
+$white-three:#ffffff;
+$pale-red:#d85252;
+$dark-sky-blue:#258fe5;
+$purply:#913ca7;
+$warm-purple:#a5276d;
+$squash:#f5a623;
+$leaf:#6ba131;
+$nasty-green:#7fba40;
+$seafoam-blue:#5bc3c1;
+$vivid-purple:#9013fe;
+
+$cd-active-1:#332B82;
+$cd-active-2:#226498;
+$cp-hover:#A640FF;
+$cp-active:#7206D1;
+$cr-hover:#EC6A6A;
+$cr-active:#C14242;
+
+$l-title:#4A4A4A;
+$l-title-two:#2A2B2F;
+$line-border:#EDEDED;
+$cup-name:#4E4D4E;
+
+// fonts
+$ff-ptsans:'PT Sans';
+$font-default: $ff-ptsans, Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font-primary: $ff-ptsans, Verdana,Geneva,sans-serif;
+
+
+// custom grid
+$table-screen: 1023px;
+$mobile-screen: 767px;
+
+// change font-size for changing ALL fonts size
+$base-font-size:10px;
+$base-line-height:10px;
+
+$smb:1080px;
+$mdb:1480px;
+$lgb:1640px;
+$xlb:1880px;
+
+// Grid breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: $smb,
+        md: $mdb,
+        lg: $lgb,
+        xl: $xlb
+) !default;
+
+// Grid containers
+// Define the maximum width of `.container` for different screen sizes.
+
+$smc:1200px;
+$mdc:1440px;
+$lgc:1600px;
+$xlc:1800px;
+$container-max-widths: (
+        sm: $smc,
+        md: $mdc,
+        lg: $lgc,
+        xl: $xlc
+) !default;
+
+$grid-gutter-width:16px;
+
+
+$csm-sm:870px;
+$csm-md:950px;
+$csm-lg:1080px;
+$csm-xl:1150px;
+
+$csm-df:1200px;
+
+$anim:0.3s;
+
+$height-header-sm: 4.8rem;
+$height-footer-lg: 21.7rem;
+$height-footer-sm: 9.7rem;

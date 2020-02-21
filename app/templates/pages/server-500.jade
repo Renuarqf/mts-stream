@@ -1,0 +1,20 @@
+extends ../layout/layout-error
+
+block vars
+	- var bodyClass = 'layout-error';
+
+block head
+	- var pageTitle = '500';
+
+block content
+	section.section-error
+		.container.container-sm
+			.section-error__image(style="background-image: url(assets/images/errors/500.png)")
+			h1.section-error__headline Ошибка на сервере 500
+			.section-error__content
+				p Произошла ошибка на сервере или превышен лимит обработки.
+			.section-error__footer
+				.section-error__links
+					a(href="#") Вернуться назад
+					|#{' '}
+					a(href="#") Написать в службе поддержки

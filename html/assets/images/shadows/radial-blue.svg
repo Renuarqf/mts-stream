@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 -1.5 1310 320" enable-background="new 0 -1.5 1310 320" xml:space="preserve">
+	<g transform="translate(-321.000000, -1166.000000)">
+			<radialGradient id="Oval-3-Copy_1_" cx="-22.2796" cy="2324.2434" r="0.4811" gradientTransform="matrix(2.014540e-14 329 1361.7787 -8.338507e-14 -3164129.5 8654.5)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#3EB1FF;stop-opacity:0.2395"/>
+			<stop  offset="1" style="stop-color:#3BA9F4;stop-opacity:0"/>
+		</radialGradient>
+		<ellipse fill="url(#Oval-3-Copy_1_)" cx="975.5" cy="1324.5" rx="655.5" ry="164.5"/>
+	</g>
+</svg>

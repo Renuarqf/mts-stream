@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 308 63" style="enable-background:new 0 0 308 63;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Rectangle-5_2_);}
+	.st1{opacity:0.6952;fill:url(#Rectangle-5_3_);enable-background:new    ;}
+</style>
+<title>Group 15</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-2">
+	<g id="ui" transform="translate(-846.000000, -1557.000000)">
+		<g id="Group-15" transform="translate(846.000000, 1557.000000)">
+			
+				<radialGradient id="Rectangle-5_2_" cx="-91.0296" cy="281.6082" r="1" gradientTransform="matrix(3.857629e-15 63 156.1837 -9.563515e-15 -43825.5195 5797.8647)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#4A90E2;stop-opacity:0.5417"/>
+				<stop  offset="1" style="stop-color:#2D7DDC;stop-opacity:0"/>
+			</radialGradient>
+			<rect id="Rectangle-5" class="st0" width="308" height="63"/>
+			
+				<radialGradient id="Rectangle-5_3_" cx="-83.6" cy="281.6169" r="1" gradientTransform="matrix(1.224646e-15 20 154.0052 -9.430111e-15 -43216.4688 1735)" gradientUnits="userSpaceOnUse">
+				<stop  offset="0" style="stop-color:#4A90E2;stop-opacity:0.5417"/>
+				<stop  offset="1" style="stop-color:#2D7DDC;stop-opacity:0"/>
+			</radialGradient>
+			<rect id="Rectangle-5_1_" y="43" class="st1" width="308" height="20"/>
+		</g>
+	</g>
+</g>
+</svg>

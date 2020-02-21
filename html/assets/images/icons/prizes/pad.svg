@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-64 -64 400 400" enable-background="new -64 -64 400 400" xml:space="preserve">
+	<filter  id="filter-1" filterUnits="objectBoundingBox" y="-84.4%" x="-84.4%" width="268.8%" height="268.8%">
+		<feOffset  result="shadowOffsetOuter1" in="SourceAlpha" dy="0" dx="0"></feOffset>
+		<feGaussianBlur  stdDeviation="35" result="shadowBlurOuter1" in="shadowOffsetOuter1"></feGaussianBlur>
+			<feColorMatrix  values="0 0 0 0 0.412602588   0 0 0 0 0.736894909   0 0 0 0 1  0 0 0 1 0" result="shadowMatrixOuter1" in="shadowBlurOuter1" type="matrix">
+			</feColorMatrix>
+		<feMerge>
+			<feMergeNode  in="shadowMatrixOuter1"></feMergeNode>
+			<feMergeNode  in="SourceGraphic"></feMergeNode>
+		</feMerge>
+	</filter>
+	<g transform="translate(-449.000000, -326.000000)">
+		<g transform="translate(521.000000, 398.000000)" filter="url(#filter-1)">
+			<path fill="none" stroke="#41AAFF" stroke-width="6" d="M128,123.752c0,2.342-1.906,4.248-4.248,4.248H4.248
+				C1.906,128,0,126.094,0,123.752V4.248C0,1.906,1.906,0,4.248,0h119.504C126.094,0,128,1.906,128,4.248V123.752z"/>
+			<path fill="none" stroke="#41AAFF" stroke-width="4" d="M114,114H14V14h28.693v7.102
+				c0,2.353,1.908,4.261,4.261,4.261h34.091c2.353,0,4.261-1.908,4.261-4.261V14H114V114z"/>
+		</g>
+	</g>
+</svg>

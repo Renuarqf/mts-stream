@@ -1,0 +1,154 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'rank'
+
+	section.section-games
+		.container.container-sm
+		
+			.section-games__head
+				.section-title Игры
+				.section-games__toggle
+					.grid-toggle.js_grid-toggle
+						.grid-toggle__change(data-grid="lg").active
+							.icon-grid-lg
+						.grid-toggle__change(data-grid="md")
+							.icon-grid-md
+								.icon-grid-md__item
+								.icon-grid-md__item
+								.icon-grid-md__item
+			.section-games__body
+				.grid-cards
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/fortnite.jpg)")
+							.card-game__body
+								.card-game__title
+									| Fortnite
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 243 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/tales-of-monkey-island.jpg)")
+							.card-game__body
+								.card-game__title
+									| Tales of Monkey Island Complete Pack: Chap...
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/league-of-legends.jpg)")
+							.card-game__body
+								.card-game__title
+									| League of Legends
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/fifa.jpg)")
+							.card-game__body
+								.card-game__title
+									| Fifa18
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/state-of-decay.jpg)")
+							.card-game__body
+								.card-game__title
+									| State of Decay 2
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/minecraft.jpg)")
+							.card-game__body
+								.card-game__title
+									| Minecraft
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/grand-theft-auto.jpg)")
+							.card-game__body
+								.card-game__title
+									| Grand Theft Auto V
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/hearthstone.jpg)")
+							.card-game__body
+								.card-game__title
+									| HearthStone
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					.grid-cards__item
+						a(href="#").card-game
+							.card-game__image
+								.card-game__cover(style="background-image: url(assets/images/content/games/hearthstone.jpg)")
+							.card-game__body
+								.card-game__title
+									| HearthStone
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 43 987
+					
+				
+			.section-games__footer
+				.link-more__wrap
+					a(href="#").link-more
+						.link-more__icon
+							svg.icon
+								use( xlink:href="#arrow-down" )
+						.link-more__name Нужно больше
+				

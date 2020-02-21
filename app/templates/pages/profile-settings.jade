@@ -1,0 +1,153 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'settings'
+	include ../modules/profile-head
+	section.section-default
+		.container
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title Основные настройки
+						.box-white
+							.form-setting
+								.form-avatar
+									.form-line
+										.form-line__name Аватар канала
+										.avatar-img(style="background-image:url(assets/images/content/avatar-2.png)")
+											label.avatar-input
+												input(type="file" name="avatar")
+												.avatar-input__icon
+													svg.icon
+														use( xlink:href="#photo-icon" )
+								.form-line.form-line-sm
+									.input-module
+										.input-module__name Название канала
+										label.input-module__label
+											input(type="text" value="" name="name" required).input-module__text
+										.input-module__details
+											| Никнейм должен содержать от 3 до 20 символов, состоящий из латинских букв, цифр и знаков «_», «-»,  без пробелов.
+								.form-line
+									.input-module
+										.input-module__name Описание канала
+										label.input-module__label
+											textarea(name="desk" required).input-module__text.input-module__text-border.active
+												| Короче, тут мы будем жечь напалмом, лезть на пальму, плавать брасом, играть на контрабасе.
+								.form-setting__separator
+								.form-line
+									.form-line__name Выберите основные теги канала
+									ul.tags-list
+										li
+											a(href="#").tag-link.active
+												.tag-link__name 24часовойстрим
+										li
+											a(href="#").tag-link
+												.tag-link__name Девушка
+										li
+											a(href="#").tag-link
+												.tag-link__name 18+
+								.form-line
+									.form-line__name Указать соцсети
+									.input-row
+										.input-module
+											label.input-module__label
+												input(type="text" name="social" placeholder="https://www.facebook.com/wasdtv" value="").input-module__text.input-module__text-border.text-uppercase
+										.btn__wrap
+											button.btn.btn-default
+												span.btn-name Добавить
+									ul.social-list
+										li
+											a(href="#" target="_blank").social-link
+												img( src="assets/images/svg-content/social-yt.svg" alt="")
+										li
+											a(href="#" target="_blank").social-link
+												img( src="assets/images/svg-content/social-vk.svg" alt="")
+										li
+											a(href="#" target="_blank").social-link
+												img( src="assets/images/svg-content/social-fb.svg" alt="")
+								.form-line
+									.btn__wrap
+										button.btn.btn-cancel
+											span.btn-name Отменить
+										button.btn.btn-default
+											span.btn-name Сохранить
+								.form-line
+									.form-text
+										p Можешь рискнуть и
+											| #{' '}
+											a(href="#" data-control="popup-confirm") удалить свой канал
+							//form-setting
+						//box-white
+					//col-inner
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title Настройки стрима
+						.box-white
+							.settings-steps__wrap
+								ul.settings-steps__list
+									li
+										.step-one
+											.step-one__img
+												img( src="assets/images/svg-content/step-1.svg" alt="")
+											.step-one__title Скачай
+												| #{' '}
+												a(href="#" target="_blank") OBS
+												|,
+												| #{' '}
+												a(href="#" target="_blank") Xsplit
+									li
+										.step-one
+											.step-one__img
+												img( src="assets/images/svg-content/step-2.svg" alt="")
+											.step-one__title Зарегистрируйся в системе студии
+									li
+										.step-one
+											.step-one__img
+												img( src="assets/images/svg-content/step-3.svg" alt="")
+											.step-one__title Вставь url в OBS (Xsplit)
+											.step-one__input
+												.input-module
+													.input-module__name URL
+													.input-module__controls
+														button.im-control.active
+															svg.icon
+																use( xlink:href="#hide-icon" )
+														button.im-control
+															svg.icon
+																use( xlink:href="#copy-icon" )
+													label.input-module__label
+														input(type="text" value="LOREM123" name="url" required disabled).input-module__text.active.blur
+
+									li
+										.step-one
+											.step-one__img
+												img( src="assets/images/svg-content/step-4.svg" alt="")
+											.step-one__title Вставь token в OBS (Xsplit)
+											.step-one__input
+												.input-module
+													.input-module__name TOKEN
+													.input-module__controls
+														button.im-control
+															svg.icon
+																use( xlink:href="#show-icon" )
+														button.im-control
+															svg.icon
+																use( xlink:href="#copy-icon" )
+													label.input-module__label
+														input(type="text" value="" name="token" required disabled).input-module__text
+									li
+										.step-one
+											.step-one__img
+												img( src="assets/images/svg-content/step-5.svg" alt="")
+											.step-one__title Начинай трансляцию
+						//box-white
+					//col-inner
+			.btn__wrap.text-center.btn__wrap-main
+				a(href="#").btn.btn-default.btn-lg Перейти на канал
+		//container

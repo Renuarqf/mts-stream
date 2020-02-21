@@ -1,0 +1,22 @@
+doctype html
+html(lang="ru").no-js
+	- var loading = "true"
+	include ../blocks/head
+
+	- var bodyClass = '';
+
+	block vars
+
+	body(class='#{bodyClass}')
+
+		.layout
+
+			include ../loading/header-loading
+			.flex-wrap
+				.layout-main__wrap
+					.layout-main
+						.layout-body.layout-body-skeleton
+							block content
+						include ../loading/footer-loading
+
+		//include ../scripts/scripts

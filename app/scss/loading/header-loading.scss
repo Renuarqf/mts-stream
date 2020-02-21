@@ -1,0 +1,111 @@
+.header-skeleton {
+  display:block;
+  height:4.8rem;
+  background:$white-three;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:.8rem 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index:100;
+}
+.header-inner-skeleton {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  align-items:center;
+  position:relative;
+  justify-content:flex-start;
+}
+.logo-skeleton {
+  display:block;
+  width:12.5rem;
+  height:2.4rem;
+  background:$skeleton-main;
+  margin-right:6.2rem;
+
+  @media screen and (max-width:$xlb) {
+    margin-right:0;
+  }
+}
+.header-controls-skeleton {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:nowrap;
+  position:relative;
+  margin:0 0 0 auto;
+  align-items:center;
+}
+.burger-menu-skeleton {
+  display:block;
+  width:1.6rem;
+  height:1.6rem;
+  border-radius:50%;
+  background:$skeleton-main;
+  margin-left:1.6rem;
+}
+.user-profile-skeleton {
+  display:block;
+  position:relative;
+  white-space:nowrap;
+  height:2.4rem;
+  padding:.4rem 0 .4rem 3.2rem;
+  margin-left:1.6rem;
+  cursor:default;
+
+  .user-profile__avatar-skeleton {
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:2.4rem;
+    height:2.4rem;
+    border-radius:50%;
+    background:$skeleton-main;
+  }
+  .user-profile__name-skeleton {
+    display:block;
+    height:1.6rem;
+    width:8.8rem;
+    background:$skeleton-main;
+    border-radius:1.6rem;
+  }
+}
+.user-exp-skeleton {
+  display:block;
+  white-space:nowrap;
+  vertical-align:middle;
+  cursor:default;
+
+  .user-exp__icon-skeleton {
+    $qsize:2.4rem;
+    display:inline-block;
+    padding:0;
+    position:relative;
+    width:$qsize;
+    height:$qsize;
+    margin-right:0.5rem;
+    vertical-align:middle;
+    background:$skeleton-main;
+    border-radius:50%;
+  }
+  .user-exp__value-skeleton {
+    display:inline-block;
+    height:2.4rem;
+    width:4.8rem;
+    background:$skeleton-main;
+    vertical-align:middle;
+    border-radius:2.4rem;
+  }
+}
+.header-link-skeleton {
+  display:block;
+  width:7rem;
+  height:3.2rem;
+  border-radius:3.2rem;
+  background:$skeleton-main;
+  margin-right:6.4rem;
+}

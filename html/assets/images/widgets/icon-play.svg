@@ -1,0 +1,31 @@
+<svg viewBox="0 0 10 14" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* <![CDATA[ */
+    .triangle {
+      stroke-dasharray: 28,4;
+
+      animation: dash 2.5s linear infinite;
+
+      stroke-linecap:round;
+      stroke-linejoin: round;
+    }
+
+    @keyframes dash {
+      from {
+        stroke-dashoffset: 0;
+      }
+
+      to {
+        stroke-dashoffset: 32;
+      }  
+    }
+    /* ]]> */
+  </style>
+  <defs>
+    <linearGradient x1="0%" y1="0%" x2="100%" y2="0%" id="gradient">
+      <stop stop-color="#483CB8" offset="0%"></stop>
+      <stop stop-color="#258FE5" offset="100%"></stop>
+    </linearGradient>
+  </defs>
+  <polygon class="triangle" fill="none" stroke="url(#gradient)" stroke-width="1.5" id='check' points="1.1,0.9 1.2,12.9 8.9,6.9"/>
+</svg>

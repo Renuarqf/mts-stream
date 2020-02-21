@@ -1,0 +1,246 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = '';
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	- var profMenu = 'main'
+	include ../modules/profile-head
+	section.section-default.section-default-grey-dark
+		.container
+			.row
+				.col-md-6.col-sm-6.col-6
+					.col-inner
+						.section-title Это мой канал
+						.channel-simple
+							a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel-simple__img
+								.status-live
+							.channel-simple__head
+								a(href="#").channel-simple__name JustAStreamerChannel
+								.channel-simple__status в эфире
+							.channel-simple__tags
+								ul.tags-list
+									li
+										a(href="#").tag-link.tag-stream
+											.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+											.tag-link__name BobtheMan
+									li
+										a(href="#").tag-link.tag-type
+											.tag-link__name MOBA
+									li
+										a(href="#").tag-link
+											.tag-link__name 18+
+							.channel__stats
+								.stat-one.stat-one-rec
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#viewers-live" )
+									.stat-one__value
+										| 243 987
+								.stat-one
+									.stat-one__icon
+										svg.icon
+											use( xlink:href="#favorite-icon" )
+									.stat-one__value
+										| 423 987
+							.channel-simple__controls
+								a(href="#").favorite-control
+									.favorite-control__icon
+										svg.icon
+											use( xlink:href="#favorite-icon" )
+									.favorite-control__name В избранном
+						//channel-simple
+					//col-inner
+		//container
+	//section-default
+	section.section-default
+		.container
+			.section-title__wrap
+				.section-title Избранные каналы
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Все каналы (53)
+						li
+							a(href="#").tab-control В эфире
+						li
+							a(href="#").tab-control Популярные
+			.tab-body
+				.row
+					.col-sm-6.col-6
+						.col-inner
+							.channel-simple
+								a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel-simple__img
+									.status-live
+								.channel-simple__head
+									a(href="#").channel-simple__name JustAStreamerChannel
+									.channel-simple__status в эфире
+								.channel-simple__tags
+									ul.tags-list
+										li
+											a(href="#").tag-link.tag-stream
+												.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+												.tag-link__name BobtheMan
+										li
+											a(href="#").tag-link.tag-type
+												.tag-link__name MOBA
+										li
+											a(href="#").tag-link
+												.tag-link__name 18+
+								.channel__stats
+									.stat-one.stat-one-rec
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#viewers-live" )
+										.stat-one__value
+											| 243 987
+									.stat-one
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.stat-one__value
+											| 423 987
+								.channel-simple__controls
+									a(href="#").favorite-control
+										.favorite-control__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.favorite-control__name В избранном
+							//channel-simple
+					.col-sm-6.col-6
+						.col-inner
+							.channel-simple
+								a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel-simple__img
+									.status-live
+								.channel-simple__head
+									a(href="#").channel-simple__name JustAStreamerChannel
+									.channel-simple__status в эфире
+								.channel-simple__tags
+									ul.tags-list
+										li
+											a(href="#").tag-link.tag-stream
+												.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+												.tag-link__name BobtheMan
+										li
+											a(href="#").tag-link.tag-type
+												.tag-link__name MOBA
+										li
+											a(href="#").tag-link
+												.tag-link__name 18+
+								.channel__stats
+									.stat-one.stat-one-rec
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#viewers-live" )
+										.stat-one__value
+											| 243 987
+									.stat-one
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.stat-one__value
+											| 423 987
+								.channel-simple__controls
+									a(href="#").favorite-control
+										.favorite-control__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.favorite-control__name В избранном
+								.channel-simple__over
+									.channel-simple__over-inner
+										.channel-simple__over__text Убрать канал
+											| #{' '}
+											strong JustAStreamerChannel
+											| #{' '}
+											| из избранных?
+										.btn__wrap
+											button.btn.btn-return Ой, ошибся
+											button.btn.btn-empty да, убрать
+							//channel-simple
+					.col-sm-6.col-6
+						.col-inner
+							.channel-simple
+								a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel-simple__img
+									.status-live
+								.channel-simple__head
+									a(href="#").channel-simple__name JustAStreamerChannel
+									.channel-simple__status в эфире
+								.channel-simple__tags
+									ul.tags-list
+										li
+											a(href="#").tag-link.tag-stream
+												.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+												.tag-link__name BobtheMan
+										li
+											a(href="#").tag-link.tag-type
+												.tag-link__name MOBA
+										li
+											a(href="#").tag-link
+												.tag-link__name 18+
+								.channel__stats
+									.stat-one.stat-one-rec
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#viewers-live" )
+										.stat-one__value
+											| 243 987
+									.stat-one
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.stat-one__value
+											| 423 987
+								.channel-simple__controls
+									a(href="#").favorite-control
+										.favorite-control__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.favorite-control__name В избранном
+							//channel-simple
+					.col-sm-6.col-6
+						.col-inner
+							.channel-simple
+								a(href="#" style="background-image:url(assets/images/content/avatar-4.jpg)").channel-simple__img
+
+								.channel-simple__head
+									a(href="#").channel-simple__name JustAStreamerChannel
+								.channel-simple__tags
+									ul.tags-list
+										li
+											a(href="#").tag-link.tag-stream
+												.tag-link__img(style="background-image:url(assets/images/content/avatar-3.png)")
+												.tag-link__name BobtheMan
+										li
+											a(href="#").tag-link.tag-type
+												.tag-link__name MOBA
+										li
+											a(href="#").tag-link
+												.tag-link__name 18+
+								.channel__stats
+									.stat-one
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#viewers-all" )
+										.stat-one__value
+											| 39 987
+									.stat-one
+										.stat-one__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.stat-one__value
+											| 423 987
+								.channel-simple__controls
+									a(href="#").favorite-control
+										.favorite-control__icon
+											svg.icon
+												use( xlink:href="#favorite-icon" )
+										.favorite-control__name Добавить в избранное
+							//channel-simple
+				.btn__wrap.text-center.btn__wrap-main
+					button.btn.btn-simple Посмотреть все
+			//tab-block
+		//container
+	//section-default

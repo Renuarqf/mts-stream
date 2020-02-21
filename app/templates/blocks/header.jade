@@ -1,0 +1,147 @@
+header.layout-header
+	- var pageName = pageTitle
+	.container
+		.header-inner
+			.logo__wrap
+				a(href="index.html").logo
+					img( src="assets/images/logo.svg" alt="Logo")
+			.menu__wrap
+				ul.menu
+					li
+						a(href="#").menu__link.active Новички
+					li
+						a(href="#").menu__link Самые самые
+					li
+						a(href="#").menu__link Записи
+					li
+						a(href="#").menu__link От Gambit
+					li
+						a(href="#").menu__link Рекомендованные
+			.header-controls
+				.header-search__wrap
+					.header-search
+						.header-search__inner
+							label.header-search__label
+								input.header-search__input(name="search" value="" placeholder="Найти на сайте")
+							button.header-search__btn
+								svg.icon
+									use( xlink:href="#search-icon" )
+						.header-search__drop
+							.drop-block
+								.drop-block__title
+									span 8 каналов
+								.drop-block__list
+									a(href="#").drop-block__elem
+										.drop-block__elem-img(style="background-image:url(assets/images/content/search/search-1.png)")
+										.drop-block__elem-name
+											span.search-match League
+											| #{' '}
+											| of True Men
+									a(href="#").drop-block__elem
+										.drop-block__elem-img(style="background-image:url(assets/images/content/search/search-2.png)")
+										.drop-block__elem-name
+											| Minion’s
+											| #{' '}
+											span.search-match  League
+									a(href="#").drop-block__elem
+										.drop-block__elem-img(style="background-image:url(assets/images/content/search/search-3.png)")
+										.drop-block__elem-name
+											| Story of
+											| #{' '}
+											span.search-match League
+								//drop-block__list
+							.drop-block
+								.drop-block__title
+									span 45 профилей
+								.drop-block__list
+									a(href="#").drop-block__elem
+										.drop-block__elem-img.drop-block__elem-avatar(style="background-image:url(assets/images/content/search/search-4.png)")
+										.drop-block__elem-name
+											span.search-match League
+											| less
+									a(href="#").drop-block__elem
+										.drop-block__elem-img.drop-block__elem-avatar(style="background-image:url(assets/images/content/search/search-5.png)")
+										.drop-block__elem-name
+											|Minion’s
+											| #{' '}
+											span.search-match League
+									a(href="#").drop-block__elem
+										.drop-block__elem-img.drop-block__elem-avatar(style="background-image:url(assets/images/content/search/search-6.png)")
+										.drop-block__elem-name
+											span.search-match League
+												| lesss
+								//drop-block__list
+							.drop__show-all__wrap
+								a(href="#").drop__show-all Посмотреть все результаты
+							.drop__nothing
+								.drop__nothing-text По данному запросу
+									br
+									| ничего
+									| #{' '}
+									span.red не найдено
+
+				.contols__menu-wrap
+					ul.contols__menu
+						li
+							a(href="#").menu__link FAQ
+				.user-header__wrap
+					.user-exp
+						.user-exp__icon
+							svg.icon
+								use( xlink:href="#exp-icon" )
+						.user-exp__value 3 056
+					.user-profile
+						.user-profile__avatar(style="background-image:url(assets/images/content/avatar-1.png)")
+						.user-profile__name Bulka_Cat 231
+				.burger-menu__wrap
+					a(href="#menu").burger-toggle
+						.burger-toggle__icon.icon-default
+							svg.icon
+								use( xlink:href="#burger-menu" )
+						.burger-toggle__icon.icon-active
+							svg.icon
+								use( xlink:href="#close-icon" )
+					.burger-menu
+						ul.burger-list
+							li
+								a(href="#").burger-menu__link
+									.bm__link-icon
+										svg.icon
+											use( xlink:href="#add-icon" )
+									.bm__link-name Создать канал
+						ul.burger-list
+							li
+								a(href="#").burger-menu__link
+									.bm__link-icon
+										svg.icon
+											use( xlink:href="#my-channel" )
+									.bm__link-name Мой канал
+							li
+								a(href="#").burger-menu__link
+									.bm__link-icon
+										svg.icon
+											use( xlink:href="#channel-settings" )
+									.bm__link-name Настройка канала
+						ul.burger-list
+							li
+								a(href="#").burger-menu__link
+									.bm__link-icon
+										svg.icon
+											use( xlink:href="#my-profile" )
+									.bm__link-name Мой профиль
+							li
+								a(href="#").burger-menu__link
+									.bm__link-icon
+										svg.icon
+											use( xlink:href="#profile-settings" )
+									.bm__link-name Настройка профиля
+						ul.burger-list
+							li
+								a(href="#").burger-menu__link
+									.bm__link-icon
+										svg.icon
+											use( xlink:href="#exit-icon" )
+									.bm__link-name Выйти
+			//header__controls
+		//header-inner
+	//container

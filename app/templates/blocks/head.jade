@@ -1,0 +1,32 @@
+head
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=1024, maximum-scale=2.0")
+	meta(http-equiv="X-UA-Compatible" content="IE=edge")
+	meta(name="imagetoolbar" content="no")
+	meta(name="msthemecompatible" content="no")
+	meta(name="cleartype" content="on")
+	meta(name="HandheldFriendly" content="True")
+
+	meta(name="format-detection" content="telephone=no")
+	meta(name="format-detection" content="address=no")
+
+	meta(name="google" value="notranslate")
+
+	meta(name="apple-mobile-web-app-capable" content="yes")
+	meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+
+	link(sizes="16x16" href="./favicon-16x16.png" rel="icon" type="image/png")
+	link(sizes="32x32" href="./favicon-32x32.png" rel="icon" type="image/png")
+
+	block head
+
+	title= pageTitle
+	
+	link(href='https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic', rel='stylesheet')
+
+	if loading == 'true'
+		link(href="assets/styles/loading.css" rel="stylesheet")
+	else if error == 'true'
+		link(href="assets/styles/errors.css" rel="stylesheet")
+	else
+		link(href="assets/styles/app.css" rel="stylesheet")

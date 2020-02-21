@@ -1,0 +1,28 @@
+extends ../layout/layout-primary
+
+block vars
+	- var bodyClass = 'layout-error';
+
+block head
+	- var pageTitle = '404';
+
+block content
+	section.section-error
+		.container.container-sm
+			.section-error__image(style="background-image: url(assets/images/errors/404.png)")
+			h1.section-error__headline Мы не смогли найти
+			.section-error__content
+				p Ошибка 404 страница не найдена. Наверное она была удалена или перемещена… А может ее и не было.
+			
+			form.section-error__form
+				.section-error__search
+					.input-module
+						.input-module__controls
+							button.im-control.search-style.active
+								svg.icon
+									use( xlink:href="#search-icon" )
+						label.input-module__label
+							input(type="text" value="Может тут поищем?" name="").input-module__text.search-style.active
+			.section-error__footer
+				p
+					a(href="#") Вернуться назад

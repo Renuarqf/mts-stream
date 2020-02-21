@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="125px" viewBox="0 0 135 125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>CA0DD2C4-72D9-443C-A3BC-CAA9328301B0</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="-57.1800603%" y1="148.116103%" x2="127.520337%" y2="-42.5613424%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-25.7068878%" y1="100%" x2="146.102443%" y2="-9.70219602%" id="linearGradient-2">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-93.4433087%" y1="624.992441%" x2="155.239636%" y2="-256.329115%" id="linearGradient-3">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Все-лвл-Профиля" transform="translate(-258.000000, -774.000000)">
+            <g id="6" transform="translate(258.000000, 774.000000)">
+                <polygon id="Rectangle-12-Copy-4" fill="#D0D0D0" opacity="0.596595982" points="85 75 100 75 100 103.750231 85 115 85 103.750231"></polygon>
+                <polygon id="Rectangle-12-Copy-5" fill="url(#linearGradient-1)" points="54 86 83 86 83 114.583103 68.6430643 125 54 114.583103"></polygon>
+                <polygon id="Rectangle-12-Copy-6" fill="#D0D0D0" opacity="0.596595982" transform="translate(43.500000, 95.000000) scale(-1, 1) translate(-43.500000, -95.000000) " points="36 75 51 75 51 103.750231 36 115 36 103.750231"></polygon>
+                <polygon id="Rectangle-12-Copy-9" fill="#D0D0D0" opacity="0.596595982" transform="translate(115.000000, 31.500000) scale(-1, 1) rotate(90.000000) translate(-115.000000, -31.500000) " points="107.5 11.5 122.5 11.5 122.5 40.2502311 107.5 51.5 107.5 40.2502311"></polygon>
+                <polygon id="Rectangle-12-Copy-16" fill="#D0D0D0" opacity="0.596595982" transform="translate(103.000000, 48.500000) scale(-1, 1) rotate(90.000000) translate(-103.000000, -48.500000) " points="95.5 28.5 110.5 28.5 110.5 57.2502311 95.5 68.5 95.5 57.2502311"></polygon>
+                <polygon id="Rectangle-12-Copy-7" fill="#D0D0D0" opacity="0.596595982" transform="translate(20.000000, 31.500000) rotate(90.000000) translate(-20.000000, -31.500000) " points="12.5 11.5 27.5 11.5 27.5 40.2502311 12.5 51.5 12.5 40.2502311"></polygon>
+                <polygon id="Rectangle-12-Copy-17" fill="#D0D0D0" opacity="0.596595982" transform="translate(32.000000, 48.500000) rotate(90.000000) translate(-32.000000, -48.500000) " points="24.5 28.5 39.5 28.5 39.5 57.2502311 24.5 68.5 24.5 57.2502311"></polygon>
+                <polygon id="Rectangle-12-Copy-21" fill="#FFFFFF" points="27 14 108 14 108 88.7558076 67.8995935 116 27 88.7558076"></polygon>
+                <polygon id="Rectangle-12-Copy-14" fill="#FFFFFF" points="27 14 109 14 109 90.2216078 68 117.167671 27 90.2216078"></polygon>
+                <polygon id="Rectangle-12-Copy-14" fill="url(#linearGradient-2)" points="30 17 105 17 105 87.3584072 67.869994 113 30 87.3584072"></polygon>
+                <polygon id="Rectangle-12-Copy-14" fill="url(#linearGradient-3)" points="68.5791028 0 77.3013638 4.74438368 90.6513298 3.39493504 95.4573393 6.86195568 68.5791028 9.48876736 41 6.86195568 45.9819885 3.39493504 60.1944191 4.74438368"></polygon>
+                <path d="M23.4112503,8 L68.5970166,12.0737642 L113,8 L110.108874,25.6410836 L113,89.9895562 L68.0245007,118.117845 L22,89.9895562 L25.4523775,26.291946 L23.4112503,8 Z M28.1832323,14.7997031 L107.37802,14.7997031 L107.37802,88.7198134 L68.0636177,115.069909 L28.1832323,88.7198134 L28.1832323,14.7997031 Z" id="Rectangle-12-Copy-15" fill="url(#linearGradient-2)"></path>
+                <text id="lvl-copy-2" font-family="PTSans-Bold, PT Sans" font-size="20" font-weight="bold" letter-spacing="1.142857" fill="#FFFFFF">
+                    <tspan x="51.6757145" y="90">LVL</tspan>
+                </text>
+                <text font-family="PTSans-Bold, PT Sans" font-size="48" font-weight="bold" letter-spacing="1.476923" fill="#FFFFFF">
+                    <tspan x="52.6535385" y="63">6</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

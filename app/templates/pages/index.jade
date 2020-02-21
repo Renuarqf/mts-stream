@@ -1,0 +1,421 @@
+extends ../layout/layout-default
+
+block vars
+	- var bodyClass = 'layout-home';
+
+
+block head
+	- var pageTitle = 'WASD';
+
+block content
+	.section-main
+		.video-block__wrap
+			.video-block
+				include ../components/player
+	//section-main
+	.section-videos(style="background-image:url(assets/images/content/preview-0.jpg)")
+		.container
+			.vd-slider
+				.vd-slider__main
+					.vd-slider__video(style="background-image:url(assets/images/content/preview-1.jpg)")
+						//player here
+				.vd-slider__thumbs
+					button.vd-thumb.active
+						.vd-thumb__inner
+							.vd-thumb__border
+								.vd-border.vd-border__top
+								.vd-border.vd-border__bottom
+								.vd-border.vd-border__right
+								.vd-border.vd-border__left
+									.vdl-top
+									.vdl-bot
+							.vd-thumb__img(style="background-image:url(assets/images/content/preview-1.jpg)")
+							.vd-thumb__title Самый популярный стрим
+					button.vd-thumb
+						.vd-thumb__inner
+							.vd-thumb__border
+								.vd-border.vd-border__top
+								.vd-border.vd-border__bottom
+								.vd-border.vd-border__right
+								.vd-border.vd-border__left
+									.vdl-top
+									.vdl-bot
+							.vd-thumb__img(style="background-image:url(assets/images/content/preview-2.jpg)")
+							.vd-thumb__title случайный стрим
+					button.vd-thumb
+						.vd-thumb__inner
+							.vd-thumb__border
+								.vd-border.vd-border__top
+								.vd-border.vd-border__bottom
+								.vd-border.vd-border__right
+								.vd-border.vd-border__left
+									.vdl-top
+									.vdl-bot
+							.vd-thumb__img(style="background-image:url(assets/images/content/preview-3.jpg)")
+							.vd-thumb__title Лидер тестовой лиги
+					button.vd-thumb
+						.vd-thumb__inner
+							.vd-thumb__border
+								.vd-border.vd-border__top
+								.vd-border.vd-border__bottom
+								.vd-border.vd-border__right
+								.vd-border.vd-border__left
+									.vdl-top
+									.vdl-bot
+							.vd-thumb__img(style="background-image:url(assets/images/content/preview-4.jpg)")
+							.vd-thumb__title Выбор редакции
+					button.vd-thumb
+						.vd-thumb__inner
+							.vd-thumb__border
+								.vd-border.vd-border__top
+								.vd-border.vd-border__bottom
+								.vd-border.vd-border__right
+								.vd-border.vd-border__left
+									.vdl-top
+									.vdl-bot
+							.vd-thumb__img(style="background-image:url(assets/images/content/preview-5.jpg)")
+							.vd-thumb__title Дневник разработчика
+
+			//vd-slider
+	//section-videos
+	section.section-default.section-default-grey
+		.container
+			.section-title__wrap
+				.section-title Популярные
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Новинки
+						li
+							a(href="#").tab-control Киберспорт
+						li
+							a(href="#").tab-control Записи
+			.channel-list
+				- var liveStatus = "true"
+				.row
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+			//stream-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Посмотреть больше
+		//container
+	//.section-default.section-default-grey
+
+	section.section-league-widget(style="background-image:url(assets/images/widgets/widget-bg-4.jpg)")
+		.container.container-sm
+			.section-leaague-widget__head
+				.section-league-widget__title Лига
+				.section-league-widget__alfa
+					img( src="assets/images/widgets/alfa.svg" alt="")
+				.section-league-widget__subtitle Этап II, Неделя 1
+				.section-league-widget__controls
+					button.btn.btn-simple.btn-none-bg
+						span.btn-name Правила игры
+			.section-leaague-widget__body
+				.row
+					.col-6
+						.league-box
+							.league-box__title Лучшие каналы
+							.league__table
+								.league__table-head
+									.row
+										.col-2
+											.l-title Место
+										.col-2
+											.l-title Очки лиги
+										.col-7
+											.l-title Название канала
+										.col-1
+											.l-title Ранг
+								.league__table-body
+									- for (var i = 0; i < 10; i++) {
+										a(href="#" class=(i == 4) ? 'current' : '').league__line
+											.row.align-middle
+												.col-2
+													.l-place
+														.l-place__value= i+1
+														if (i == 3)
+															.l-place__changing.plus +32
+														if (i == 5)
+															.l-place__changing.minus -10
+												.col-2
+													.l-score= (10 - i)*317
+												.col-7
+													.l-name
+														if (i == 1)
+															.l-name__icon
+																img( src="assets/images/widgets/icon-play.svg" alt="")
+														.l-name__avatar(style="background-image:url(assets/images/content/avatar-2.png)")
+														.l-name__value Joan Pena
+												.col-1
+													.l-rank
+														img( src="assets/images/svg-content/lvl/lvl-1-blue.svg" alt="")
+									- }
+							.btn__wrap.text-center
+								button.btn.btn-simple
+									span.btn-name Рейтинг каналов
+					//col-6
+					.col-6
+						.league-box
+							.league-box__title Лучшие зрители
+							.league__table
+								.league__table-head
+									.row
+										.col-2
+											.l-title Место
+										.col-2
+											.l-title Очки лиги
+										.col-7
+											.l-title Ник зрителя
+										.col-1
+											.row-title Уровень
+								.league__table-body
+									- for (var i = 0; i < 10; i++) {
+										a(href="#").league__line
+											.row.align-middle
+												.col-2
+													.l-place
+														.l-place__value= i+1
+														if (i == 3)
+															.l-place__changing.plus +32
+														if (i == 5)
+															.l-place__changing.minus -10
+												.col-2
+													.l-score= (10 - i)*317
+												.col-7
+													.l-name
+														if (i == 1)
+															.l-name__icon
+																img( src="assets/images/widgets/icon-play.svg" alt="")
+														.l-name__avatar(style="background-image:url(assets/images/content/avatar-2.png)").l-name__avatar-circle
+														.l-name__value Joan Pena
+												.col-1
+													.l-rank
+														img( src="assets/images/svg-content/rank-5.svg" alt="")
+									- }
+							.btn__wrap.text-center
+								button.btn.btn-simple
+									span.btn-name Рейтинг зрителей
+					//col-6
+		//container
+	//section-league-widget
+	section.section-default.section-default-dark
+		.container
+			.section-title__wrap
+				.section-title Рекомендованные
+			.horizontal-block
+				.horizontal-block
+					.horizontal-block__inner
+						- var channelMode = 'inside'
+						.column
+							.row
+								.col-sm-12
+									include ../components/channel-sm
+								.col-sm-6
+									include ../components/channel-sm
+								.col-sm-6
+									include ../components/channel-sm
+						.column
+							.row
+								.col-sm-12
+									include ../components/channel-sm
+								.col-sm-6
+									include ../components/channel-sm
+								.col-sm-6
+									include ../components/channel-sm
+						.column
+							.row
+								.col-sm-12
+									include ../components/channel-sm
+								.col-sm-6
+									include ../components/channel-sm
+								.col-sm-6
+									include ../components/channel-sm
+
+	section.section-default.section-default-grey
+		.container
+			.section-title__wrap
+				.section-title Популярные
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Первый стрим
+						li
+							a(href="#").tab-control Стоит посмотреть
+						li
+							a(href="#").tab-control Быстрый рост
+			.channel-list
+				- var liveStatus = "true"
+				- channelMode = 'outside'
+				.row
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+			//stream-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Посмотреть больше
+		//container
+	//.section-default.section-default-grey
+
+	section.section-banner(style="background-image:url(assets/images/content/banner-1.jpg)")
+		.container
+			.section-banner__inner
+				.section-banner__title Стань сыном маминой подруги!
+				.section-banner__subtitle Создай уже свой канал и начни зарабатывать респект и бабло!
+				.btn__wrap
+					a(href="#").btn.btn-default.btn-lg Создать канал
+
+	section.section-default.section-default-grey
+		.container
+			.section-title__wrap
+				.section-title Самые самые
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Просматриваемые
+						li
+							a(href="#").tab-control Крутые записи
+						li
+							a(href="#").tab-control Самые любимые
+						li
+							a(href="#").tab-control Самые долгие
+			.channel-list
+				- var liveStatus = "true"
+				- var channelSize = 'md'
+				.row
+					.col-sm-6.col-xl-6.col-6
+						include ../components/channel-sm
+					.col-sm-6.col-xl-6.col-6
+						include ../components/channel-sm
+			//stream-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Посмотреть больше
+		//container
+	//.section-default.section-default-grey
+
+
+
+
+	section.section-default.section-default-grey
+		.container
+			.section-title__wrap
+				.section-title Записи игр
+					.section-title__channel
+						.section-title__name Gambit
+						.section-title__icon
+							img( src="assets/images/svg-content/channel-logo.svg" alt="")
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Лучшее
+						li
+							a(href="#").tab-control CS:GO
+						li
+							a(href="#").tab-control DOTA2
+						li
+							a(href="#").tab-control LOL
+			.channel-list
+				- channelSize = 'sm'
+				- liveStatus = "false"
+				.row
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+			//stream-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-up" )
+					.link-more__name Свернуть
+		//container
+	//.section-default.section-default-grey
+
+
+	section.section-banner(style="background-image:url(assets/images/content/banner-2.jpg)").section-banner-light
+		.container
+			.section-banner__inner
+				.section-banner__title Смотри
+				.section-banner__title Запускай свой стрим
+				.section-banner__title Наслаждайся
+				.section-banner__subtitle Выполняй ежедневные задания, зарабатывай опыт и получай призы.
+
+	section.section-default.section-default-grey
+		.container
+			.section-title__wrap
+				.section-title Все записи
+				.tab-controls__wrap
+					ul.tab-controls
+						li
+							a(href="#").tab-control.active Популярные
+						li
+							a(href="#").tab-control Новые
+						li
+							a(href="#").tab-control Киберспорт
+						li
+							a(href="#").tab-control Самые короткие
+			.channel-list
+				- channelSize = 'sm'
+				- liveStatus = "false"
+				.row
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+					.col-sm-3.col-xl-2.col-6
+						include ../components/channel-sm
+			//stream-list
+			.link-more__wrap
+				a(href="#").link-more
+					.link-more__icon
+						svg.icon
+							use( xlink:href="#arrow-down" )
+					.link-more__name Посмотреть больше
+		//container
+	//.section-default.section-default-grey

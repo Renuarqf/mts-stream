@@ -1,0 +1,230 @@
+.section-games {
+	display: block;
+	width: 100%;
+	padding: 5rem 0;
+}
+
+.section-games__head {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+
+	.section-title {
+		margin: 0;
+	}
+
+	.grid-toggle {
+		margin-top: .5rem;
+	}
+}
+
+.grid-cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 0 -.8rem;
+}
+
+.grid-toggle {
+	display: flex;
+}
+
+.grid-toggle__change {
+	margin-left: 1rem;
+	cursor: pointer;
+
+	&.active {
+
+		.icon-grid-lg {
+			&:after,
+			&:before {
+				background-color: #258fe5;
+			}
+		}
+
+		.icon-grid-md__item {
+			&:after,
+			&:before {
+				background-color: #258fe5;
+			}
+		}
+	}
+}
+
+.grid-cards_md {
+	.grid-cards__item {
+		width: 16.666%;
+	}
+
+	.card-game__body {
+		display: block;
+
+		.stat-one {
+			margin-left: 0;
+		}
+	}
+
+	.card-game__title {
+		font-size: 1.6rem;
+		width: 100%;
+	}
+}
+
+.grid-cards__item {
+	width: 25%;
+	padding-left: .8rem;
+	padding-right: .8rem;
+	margin-bottom: 1.6rem;
+}
+
+
+.card-game {
+	display: block;
+
+	&:hover {
+
+		.card-game__cover {
+			transform: scale(1.05);
+		}
+
+		.card-game__title {
+			color: #4ca6ef;
+		}
+	}
+
+	&:active {
+		.card-game__title {
+			color: #266bc5;
+		}
+	}
+}
+
+.card-game__image {
+	position: relative;
+	overflow: hidden;
+
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: (408 / 288) * 100%;
+	}
+}
+
+.card-game__cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	@include transition(transform .3s);
+	backface-visibility: hidden;
+}
+
+.card-game__body {
+	display: flex;
+	align-items: start;
+	margin-top: 1rem;
+
+	.stat-one {
+		min-width: 6.5rem;
+		margin: .5rem 0 0 1rem;
+	}
+}
+
+.card-game__title {
+	flex: 1;
+	color: #000;
+	font-size: 2rem;
+	line-height: 1.2;
+	letter-spacing: .005em;
+	font-weight: 400;
+	@include transition(color .3s);
+}
+
+
+.icon-grid-lg {
+	width: 2.3rem;
+	height: 2rem;
+	position: relative;
+	display: block;
+
+	&:after,
+	&:before {
+		content:'';
+		display: block;
+		width: 1rem;
+		height: 2rem;
+		position: absolute;
+		top: 0;
+		@include transition(background-color .3s);
+		background-color: #a0a0a0;
+	}
+
+	&:before {
+		left: 0;
+	}
+
+	&:after {
+		right: 0;
+	}
+
+	&:hover {
+		&:after,
+		&:before {
+			background-color: rgba(37,143,229, .4);
+		}
+	}
+}
+
+.icon-grid-md {
+	display: flex;
+	width: 2.2rem;
+	height: 2rem;
+
+	.icon-grid-md__item {
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	&:hover {
+		.icon-grid-md__item {
+			&:after,
+			&:before {
+				background-color: rgba(37,143,229, .4);
+			}
+		}
+	}
+}
+
+.icon-grid-md__item {
+	margin-left: .2rem;
+	position: relative;
+	height: 2rem;
+	width: .6rem;
+
+
+	&:after,
+	&:before {
+		content:'';
+		display: block;
+		position: absolute;
+		left: 0;
+		width: .6rem;
+		height: .9rem;
+		@include transition(background-color .3s);
+		background-color: #a0a0a0;
+	}
+
+	&:after {
+		top: 0;
+	}
+
+	&:before {
+		bottom: 0;
+	}
+}

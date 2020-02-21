@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 76 120" style="enable-background:new 0 0 7 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-opacity:0;}
+	.st1{filter:url(#filter-2);}
+	.st2{fill:#4A90E2;}
+	.st3{opacity:0.6952;fill:url(#Rectangle-5_1_);enable-background:new    ;}
+	.st4{fill:#C71026;}
+	.st5{fill:#FFFFFF;}
+</style>
+<filter  filterUnits="objectBoundingBox" height="1543.7%" id="filter-2" width="218.3%" x="-59.2%" y="-538.8%">
+	<feOffset  dx="0" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="8"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlurOuter1" result="shadowMatrixOuter1" type="matrix" values="0 0 0 0 0.149936869   0 0 0 0 0.542399811   0 0 0 0 1  0 0 0 1 0">
+		</feColorMatrix>
+	<feOffset  dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+	<feGaussianBlur  in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="4"></feGaussianBlur>
+	
+		<feColorMatrix  in="shadowBlurOuter2" result="shadowMatrixOuter2" type="matrix" values="0 0 0 0 0.288655698   0 0 0 0 0.56455189   0 0 0 0 0.886238694  0 0 0 1 0">
+		</feColorMatrix>
+	<feMerge>
+		<feMergeNode  in="shadowMatrixOuter1"></feMergeNode>
+		<feMergeNode  in="shadowMatrixOuter2"></feMergeNode>
+	</feMerge>
+</filter>
+<title>Group 21</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-2">
+	<g id="ui" transform="translate(-770.000000, -1896.000000)">
+		<g id="Group-21" transform="translate(777.000000, 1889.000000)">
+			<rect id="Rectangle-2" x="-7" y="7" class="st0" width="76" height="120"/>
+			<g id="Group-13" transform="translate(0.000000, 7.000000)">
+				<g id="duplicate_3_original_Rectangle-2_25635729">
+					<g class="st1">
+						<path id="path-1_2_" d="M3.5,83h55.1c1.4,0,2.5,1.1,2.5,2.5l0,0c0,1.4-1.1,2.5-2.5,2.5H3.5c-1.4,0-2.5-1.1-2.5-2.5l0,0
+							C1,84.1,2.1,83,3.5,83z"/>
+					</g>
+					<g>
+						<path id="path-1_1_" class="st2" d="M3.5,83h55.1c1.4,0,2.5,1.1,2.5,2.5l0,0c0,1.4-1.1,2.5-2.5,2.5H3.5
+							c-1.4,0-2.5-1.1-2.5-2.5l0,0C1,84.1,2.1,83,3.5,83z"/>
+					</g>
+				</g>
+				
+					<radialGradient id="Rectangle-5_1_" cx="-214.4692" cy="313.9062" r="0.8611" gradientTransform="matrix(3.980103e-15 65 42.3974 -2.596089e-15 -13277.2959 14019.3506)" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#4A90E2"/>
+					<stop  offset="1" style="stop-color:#2D7DDC;stop-opacity:0"/>
+				</radialGradient>
+				<rect id="Rectangle-5" x="-7" y="20" class="st3" width="77" height="65"/>
+				<path id="Shape" class="st4" d="M29.4,7c0.9,2.8,0.4,4.4-0.6,5.7c-1,1.4-2.7,2.4-3.9,4.4c-1.5,2.7-1.8,8.6,3.8,10.1
+					c-2.3-1.5-2.8-5.9-0.3-8.7c-0.7,2.7,0.6,4.4,2.1,3.8c1.5-0.6,2.5,0.7,2.4,2.2c0,1-0.3,1.9-1.2,2.4c3.6-0.8,5.1-4.5,5.1-7.3
+					c0-3.7-2.7-4.2-1.3-7.4c-1.6,0.2-2.2,1.5-2,3.6c0.1,1.4-1.1,2.4-2,1.7c-0.7-0.5-0.7-1.6-0.1-2.3C32.7,13.6,33.3,9.8,29.4,7
+					L29.4,7L29.4,7z"/>
+				<path id="Shape-Copy" class="st5" d="M43,47c0,5.6-3.8,10.3-9,11.6V69h6c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H22c-0.6,0-1-0.4-1-1
+					c0-0.6,0.4-1,1-1h6V58.6c-5.2-1.3-9-6-9-11.6c-3.9,0-7-3.1-7-7v-2c0-0.6,0.4-1,1-1h6v-1c0-1.7-1.3-3-3-3c-0.6,0-1-0.4-1-1
+					c0-0.6,0.4-1,1-1h30c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1c-1.7,0-3,1.3-3,3v1h6c0.6,0,1,0.4,1,1v2C50,43.9,46.9,47,43,47z M30,69h2
+					V58.9c-0.3,0-0.7,0.1-1,0.1s-0.7,0-1-0.1V69z M14,39v1c0,2.8,2.2,5,5,5v-6H14z M20,33c0.6,0.8,1,1.9,1,3v11c0,5.5,4.5,10,10,10
+					c5.5,0,10-4.5,10-10V36c0-1.1,0.4-2.2,1-3H20z M48,39h-5v6c2.8,0,5-2.2,5-5V39z M19,73h24c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H19
+					c-0.6,0-1-0.4-1-1C18,73.4,18.4,73,19,73z M37.2,43.1c0.2,0.1,0.3,0.4,0.3,0.6s-0.1,0.5-0.3,0.6l-8,6.1
+					c-0.1,0.1-0.3,0.2-0.5,0.2c-0.1,0-0.2,0-0.3-0.1c-0.3-0.1-0.4-0.4-0.4-0.7v-7.3c0-0.4,0.3-0.8,0.8-0.8c0.4,0,0.8,0.3,0.8,0.8
+					v5.8l6-4.6l-7.2-5.3c-0.3-0.2-0.4-0.7-0.2-1c0.2-0.3,0.7-0.4,1-0.2L37.2,43.1z"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
